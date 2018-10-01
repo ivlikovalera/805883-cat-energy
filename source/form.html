@@ -30,7 +30,7 @@
       <h1 class="page-main__title">Подбор программы</h1>
       <p class="page-main__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
       <form class="page-main__form form" method="post" action="https://echo.htmlacademy.ru">
-        <fieldset class="form__name">
+        <fieldset class="form__fieldset">
           <label for="name">Имя:<sup>*</sup></label>
           <input id="name" type="text" name="cat-name" placeholder="Барсик" required>
           <label for="weight">Вес (кг):<sup>*</sup></label>
@@ -38,7 +38,7 @@
           <label for="age">Возраст (лет):</label>
           <input id="age" type="text" name="cat-age" placeholder="7">
         </fieldset>
-        <fieldset class="form__radio">
+        <fieldset class="form__fieldset">
           <input id="losing" type="radio" name="radiobutton" value="losing-weight" checked>
           <label for="losing">Похудение</label>
           <input id="gain" type="radio" name="radiobutton" value="weight-gain">
@@ -46,20 +46,20 @@
           <input id="not" type="radio" name="radiobutton" value="not-known">
           <label for="not">Не знаю (Нужен ваш совет)</label>
         </fieldset>
-        <fieldset class="form__contacts">
+        <fieldset class="form__fieldset">
           <legend class="contacts">Контактные данные (владельца кота)</legend>
           <label for="email">E-mail:<sup>*</sup></label>
           <input id="email" type="email" name="email-human" placeholder="kuklachev@gmail.com" required>
           <label for="phone">Телефон:<sup>*</sup></label>
           <input id="phone" type="tel" name="tel-human" placeholder="8(960)900-60-90" required>
         </fieldset>
-        <fieldset class="form__comment">
+        <fieldset class="form__fieldset">
           <legend class="comment">Комментарий</legend>
           <textarea rows="7" cols="40" name="text" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
-        <fieldset class="form__checkbox">
+        <fieldset class="form__fieldset">
           <legend class="checkbox">Дополнительно</legend>
-          <input id="sweetener" type="checkbox" name="sweetener">
+          <input id="sweetener" type="checkbox" name="sweetener" checked>
           <label for="sweetener">Сахарозаменитель</label>
           <input id="water" type="checkbox" name="drink-water">
           <label for="water">Питьевая вода</label>
@@ -68,7 +68,7 @@
           <input id="vitamin" type="checkbox" name="vitamins">
           <label for="vitamin">Витамины</label>
         </fieldset>
-        <button type="submit" class="form__button">Отправить заявку</button>
+        <button type="submit" class="form__button button">Отправить заявку</button>
       </form>
       <p class="page-main__desc"><sup>*</sup> — Обязательные поля</p>
     </main>
