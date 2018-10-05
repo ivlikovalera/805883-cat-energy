@@ -1,0 +1,46 @@
+.main-nav {
+  width: 280px;
+  font-family: $font-family-main;
+  font-weight: 500;
+  color: $text-color-main;
+  text-transform: uppercase;
+  
+  background-color: $color-main;
+}
+
+.main-nav__toggle {
+  display: inline-block;
+  width: 25px;
+  height: 19px;
+  
+  font-size: 0;
+  
+  background-color: red;
+  border: 0;
+
+  cursor: pointer;
+}
+
+.main-nav__toggle:after,
+.main-nav__toggle:before {
+  content: "";
+
+  position: absolute;
+
+  width: 25px;
+  height: 2px;
+
+  background-color: #000000;
+}
+
+.main-nav__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+}
+
+.main-nav__list {
+  list-style: none;
+  padding: 0;
+}
+

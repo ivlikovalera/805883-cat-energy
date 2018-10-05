@@ -1,0 +1,19 @@
+.site-list__link {
+  color: $text-color-main;
+  text-decoration: none;
+  padding: 0;
+}
+
+.site-list__item {
+  width: auto;
+  box-sizing: border-box;
+  padding-bottom: 24px;
+  padding-top: 24px;
+  border-top: 1px solid lightgrey;
+  font-family: $font-family-main;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
