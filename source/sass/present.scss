@@ -1,10 +1,12 @@
 .present {
+  width: 320px;
+  margin: 0 auto;
   background-image: url(../img/index-background-mobile@1x.jpg);
   background-repeat: no-repeat;
   background-size: 320px 305px;
   color: $text-color-on_green;
-  margin-right: -20px;
-  margin-left: -20px;
+  margin: 0;
+  margin-bottom: 22px;
 }
 
 .present__title {
@@ -44,6 +46,5 @@
   font-size: 14px;
   line-height: 18px;
   
-  margin: 0 auto;
   padding-top: 14px;
   }

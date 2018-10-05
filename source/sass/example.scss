@@ -1,0 +1,23 @@
+.example {
+  width: 320px;
+  
+  background-color: $color-second;
+  
+  margin: 0 auto;
+}
+
+.example__subtitle{
+  font-family: $font-family-main;
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: $text-color-main;
+  
+  padding-left: 20px;
+  padding-top: 33px;
+  margin: 0;
+}

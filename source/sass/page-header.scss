@@ -1,5 +1,10 @@
 .page-header {
   display: flex;
   flex-wrap: wrap;
-  
+  width: auto;
+}
+
+.page-header__logo-image {
+  margin-left: 20px;
+  margin-right: 10px;
 }

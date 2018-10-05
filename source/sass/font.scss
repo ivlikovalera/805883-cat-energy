@@ -1,13 +1,17 @@
-  @font-face
-  font-family: Oswald, Arial, sans-serif
-  src: url(../fonts/oswaldregular.woff2)
-  font-weight: 400
-  font-style: normal
-  font-stretch: normal
-
-  @font-face
-  font-family: Oswald, Arial, sans-serif
-  src: url(../fonts/oswaldmedium.woff2)
-  font-weight: 500
-  font-style: normal
-  font-stretch: normal
+@font-face{
+  font-family: "Oswald";
+  src: url("../fonts/oswaldregular.woff2");
+  src: url("../fonts/oswaldregular.woff");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+}
+  
+@font-face{ 
+  font-family: "Oswald";
+  src: url("../fonts/oswaldmedium.woff2");
+  src: url("../fonts/oswaldmedium.woff");
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+}

@@ -6,6 +6,9 @@
   text-transform: uppercase;
   
   background-color: $color-main;
+  
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .main-nav__toggle {
@@ -21,22 +24,9 @@
   cursor: pointer;
 }
 
-.main-nav__toggle:after,
-.main-nav__toggle:before {
-  content: "";
-
-  position: absolute;
-
-  width: 25px;
-  height: 2px;
-
-  background-color: #000000;
-}
-
 .main-nav__wrapper {
   display: flex;
   flex-direction: column;
-  width: 280px;
 }
 
 .main-nav__list {
