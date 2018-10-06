@@ -1,0 +1,26 @@
+.slider__text {
+  font-family: $font-family-main;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  color: $text-color-main;
+  text-transform: uppercase;
+}
+
+.slider__text--before {
+  text-align: left;
+}
+
+.slider__text--after {
+  text-align: right;
+}
+
+.slider__text-inner {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}

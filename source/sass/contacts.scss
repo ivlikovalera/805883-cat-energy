@@ -1,0 +1,38 @@
+
+.contacts{
+  display: flex;
+  width: 280px;
+  margin: 0 auto;
+}
+
+.contacts__title {
+  flex-shrink: 2;
+  font-family: $font-family-main;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: $text-color-main;
+  text-transform: uppercase;
+  
+  margin-top: 31px;
+  margin-bottom: 26px;
+}
+
+.contacts__text {
+  font-family: $font-family-second;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: $text-color-second;
+  
+  margin-top: 33px;
+  margin-bottom: 28px;
+}

@@ -1,0 +1,43 @@
+.table {
+  width: 140px;
+  table-layout: fixed;
+  margin-right: 20px;
+}
+.table__caption {
+  width: 80px;
+  
+  font-family: $font-family-main;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: $text-color-main;
+  text-transform: uppercase;
+  
+  padding-top: 25px;
+}
+
+.table__stroke { 
+  
+  font-family: $font-family-second;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  color: $text-color-second;
+  
+}
+
+.table__cell--right {
+  text-align: right;
+}
+
+.table__cell--left {
+  text-align: left;
+  margin-right: auto;
+}
