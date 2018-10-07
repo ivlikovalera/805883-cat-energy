@@ -5,7 +5,6 @@
 }
 .table__caption {
   width: 80px;
-  
   font-family: $font-family-main;
   font-size: 16px;
   line-height: 20px;
@@ -16,12 +15,10 @@
   text-align: left;
   color: $text-color-main;
   text-transform: uppercase;
-  
   padding-top: 25px;
 }
 
 .table__stroke { 
-  
   font-family: $font-family-second;
   font-size: 12px;
   line-height: 16px;
@@ -30,7 +27,6 @@
   font-stretch: normal;
   letter-spacing: normal;
   color: $text-color-second;
-  
 }
 
 .table__cell--right {
