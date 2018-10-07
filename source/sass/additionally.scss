@@ -32,11 +32,13 @@
   text-transform: uppercase;
   margin: 0;
 }
-.additionally__inner{
+
+.additionally__inner {
   display: flex;
   width: 280px;
   justify-content: space-between;
 }
+
 .additionally__text {
   font-family: $font-family-second;
   font-size: 14px;
