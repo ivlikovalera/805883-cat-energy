@@ -1,0 +1,84 @@
+.additionally {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.additionally__title {
+  font-family: $font-family-main;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: $text-color-main;
+  border-bottom: 1px solid lightgray;
+  
+  padding-bottom: 30px;
+  padding-top: 31px;
+  margin: 0;
+}
+
+.additionally__subtitle {
+  font-family: $font-family-main;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #222222;
+  text-transform: uppercase;
+  
+  margin: 0;
+}
+.additionally__inner{
+  display: flex;
+  width: 280px;
+  justify-content: space-between;
+}
+.additionally__text {
+  font-family: $font-family-second;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  color: $text-color-second;
+}
+
+.additionally__item {
+  border-bottom: 1px solid lightgray;
+  
+  padding-top: 14px;
+  padding-bottom: 17px;
+}
+
+.additionally__bonus {
+  width: 280px;
+  height: 289px;
+  background-color: lightgreen;
+  background-image: url(../img/gift-photo-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  
+  margin-top: 39px;
+  margin-bottom: 35px;
+}
+
+
+.additionally__bonus-text {
+  font-family: $font-family-second;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: $text-color-on_green;
+  
+  padding: 190px 60px 43px 60px;
+}

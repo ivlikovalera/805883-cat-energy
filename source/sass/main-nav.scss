@@ -1,14 +1,13 @@
 .main-nav {
-  width: 280px;
+  width: 320px;
+  margin: 0 auto;
+  
   font-family: $font-family-main;
   font-weight: 500;
   color: $text-color-main;
   text-transform: uppercase;
   
   background-color: $color-main;
-  
-  margin-left: 20px;
-  margin-right: 20px;
 }
 
 .main-nav__toggle {

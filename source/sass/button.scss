@@ -16,6 +16,10 @@
   width: 280px;
   height: 40px;
   margin: 0 auto;
-  padding-top: 12px; 
-  }
+  padding-top: 12px;
+    &--grey {
+      background-color: $button-color-second;
+      color: $text-color-second;
+    }
+}
 
