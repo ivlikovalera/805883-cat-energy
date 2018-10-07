@@ -1,12 +1,10 @@
 .main-nav {
   width: 320px;
   margin: 0 auto;
-  
   font-family: $font-family-main;
   font-weight: 500;
   color: $text-color-main;
   text-transform: uppercase;
-  
   background-color: $color-main;
 }
 
@@ -14,12 +12,9 @@
   display: inline-block;
   width: 25px;
   height: 19px;
-  
   font-size: 0;
-  
   background-color: red;
   border: 0;
-
   cursor: pointer;
 }
 
@@ -32,4 +27,3 @@
   list-style: none;
   padding: 0;
 }
-

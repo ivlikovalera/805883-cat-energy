@@ -5,14 +5,12 @@
 .page-footer__map {
   width: 320px;
   height: 362;
-  
   margin: 0 auto;
 }
 
 .page-footer__inner {
   width: 320px;
   margin: 0 auto;
-  
   background-color: $color-second;
 }
 
@@ -24,11 +22,9 @@
 }
 .page-footer__copyright{
   width: 280px;
-  
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  
   margin: 0 auto;
 }
 
@@ -53,6 +49,5 @@
   letter-spacing: normal;
   text-align: left;
   color: $text-color-second;
-  
   margin-right: 130px;
 }
