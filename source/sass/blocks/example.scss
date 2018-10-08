@@ -1,0 +1,111 @@
+.example {
+  width: 320px;
+  background-color: $color-second;
+  margin: 0 auto;
+}
+
+.example__subtitle {
+  font-family: $font-family-main;
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: $text-color-main;
+  padding-left: 20px;
+  padding-top: 15px;
+  padding-bottom: 33px;
+  margin: 0;
+}
+
+.example__text {
+  font-family: $font-family-second;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: $text-color-second;
+  padding-left: 20px;
+  padding-right: 34px;
+  padding-bottom: 27px;
+  margin: 0;
+}
+
+.example__content {
+  display: flex;
+  width: 280px;
+  margin: 0 auto;
+  margin-left: 20px;
+  margin-right: 20px;
+  justify-content: space-between;
+}
+
+.example__result-text {
+  box-sizing: border-box;
+  font-family: $font-family-main;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: $text-color-main;
+  text-transform: uppercase;
+  border: solid 1px #cdcdcd;
+  border-radius: 3px;
+}
+
+.example__result-text--left {
+  padding: 14px 43px 15px 43px;
+  margin-right: 32px;
+}
+
+.example__result-text--right {
+  padding: 14px 23px 15px 23px;
+}
+
+.example__result-subtitle {
+  font-family: $font-family-second;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: $text-color-second;
+  background-color: $color-second;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.example__result-subtitle--left {
+  position: absolute;
+  top: 2140px;
+  left: 540px;
+}
+
+.example__result-subtitle--right {
+  position: absolute;
+  top: 2140px;
+  left: 720px;
+}
+
+.example__text-small {
+  font-family: $font-family-main;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: $text-color-main;
+  text-transform: uppercase;
+}

@@ -1,0 +1,22 @@
+.page-header {
+  display: flex;
+  flex-wrap: wrap;
+  width: auto;
+  margin: 0 auto;
+}
+
+.page-header__logo-image {
+  display: inline-block;
+  width: 191px;
+  margin-left: 20px;
+  margin-right: 10px;
+}
+
+.page-header__logo-image:hover,
+.page-header__logo-image:focus {
+  opacity: 0.8;
+}
+
+.page-header__logo-image:active {
+  opacity: 0.6;
+}

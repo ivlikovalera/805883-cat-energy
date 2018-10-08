@@ -1,0 +1,49 @@
+.present {
+  width: 320px;
+  margin: 0 auto;
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: 320px 305px;
+  color: $text-color-on_green;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 22px;
+}
+
+.present__title {
+  font-family: $font-family-main;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: $text-color-on_green;
+  margin: 0;
+  padding-top: 29px;
+  padding-bottom: 19px;
+}
+
+.present__slogan {
+  font-family: $font-family-main;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: $text-color-on_green;
+  text-transform: uppercase;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 29px;
+}
+
+.present__button {
+  font-size: 14px;
+  line-height: 18px;
+  padding-top: 14px;
+}

@@ -1,0 +1,43 @@
+.button {
+  display: inline-block;
+  font-family: $font-family-main;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
+  background-color: $button-color-main;
+  color: $text-color-on_green;
+  box-sizing: border-box;
+  width: 280px;
+  height: 40px;
+  margin: 0 auto;
+  padding-top: 12px;
+
+  &--grey {
+    background-color: $button-color-second;
+    color: $text-color-second;
+  }
+}
+
+.button:hover,
+.button:focus {
+  background-color: $button-color-main-action;
+}
+
+.button--grey:hover,
+.button--grey:focus {
+  background-color: $button-color-second-action;
+  color: $text-color-second;
+}
+
+.button:active {
+  color: $text-color-on_green-down;
+}
+
+.button--grey:active {
+  background-color: #ebebeb;
+  color: rgba(68, 68, 68, 0.3);
+}

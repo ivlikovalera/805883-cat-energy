@@ -1,0 +1,39 @@
+.effect {
+  width: 280px;
+  margin: 0 auto;
+  margin-top: 12px;
+}
+
+.effect__subtitle {
+  font-family: $font-family-main;
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: $text-color-main;
+  margin: 0;
+  padding-bottom: 35px;
+}
+
+.effect__list {
+  list-style: none;
+  margin: 0;
+  padding-left: 80px;
+  margin-bottom: 15px;
+}
+
+.effect__list-item {
+  font-family: $font-family-second;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: $text-color-second;
+  padding-bottom: 32px;
+}
