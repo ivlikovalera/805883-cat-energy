@@ -11,3 +11,12 @@
   margin-left: 20px;
   margin-right: 10px;
 }
+
+.page-header__logo-image:hover,
+.page-header__logo-image:focus {
+  opacity: 0.8;
+}
+
+.page-header__logo-image:active {
+  opacity: 0.6;
+}

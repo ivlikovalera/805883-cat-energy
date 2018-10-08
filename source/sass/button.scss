@@ -21,3 +21,23 @@
     color: $text-color-second;
   }
 }
+
+.button:hover,
+.button:focus {
+  background-color: $button-color-main-action;
+}
+
+.button--grey:hover,
+.button--grey:focus {
+  background-color: $button-color-second-action;
+  color: $text-color-second;
+}
+
+.button:active {
+  color: $text-color-on_green-down;
+}
+
+.button--grey:active {
+  background-color: #ebebeb;
+  color: rgba(68, 68, 68, 0.3);
+}
