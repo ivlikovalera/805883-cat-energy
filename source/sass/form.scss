@@ -33,7 +33,6 @@
 
   &--radio {
     padding-left: 20px;
-    margin: 0;
   }
 
   &--contact {
@@ -51,7 +50,6 @@
     width: 210px;
     padding-top: 12px;
     padding-left: 20px;
-    margin: 0;
   }
 }
 
@@ -84,6 +82,7 @@
 }
 
 .form__input-text {
+  flex-grow: 1;
   font-family: $font-family-main;
   font-size: 16px;
   line-height: 18px;
@@ -100,6 +99,20 @@
   padding-left: 16px;
   padding-top: 15px;
   padding-bottom: 14px;
+  margin-left: 12px;
+  margin-bottom: 13px;
+
+  &--textarea {
+    margin-left: 0;
+  }
+}
+
+.form__input-radio {
+  margin-right: 16px;
+}
+
+.form__input-checkbox {
+  margin-right: 16px;
 }
 
 .form__button {
