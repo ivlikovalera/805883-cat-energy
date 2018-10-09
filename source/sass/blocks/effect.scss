@@ -2,6 +2,7 @@
   width: 280px;
   margin: 0 auto;
   margin-top: 12px;
+  margin-bottom: 17px;
 }
 
 .effect__subtitle {
@@ -15,14 +16,13 @@
   text-align: left;
   color: $text-color-main;
   margin: 0;
-  padding-bottom: 35px;
+  padding-bottom: 31px;
 }
 
 .effect__list {
   list-style: none;
   margin: 0;
   padding-left: 80px;
-  margin-bottom: 15px;
 }
 
 .effect__list-item {
@@ -35,5 +35,5 @@
   letter-spacing: normal;
   text-align: left;
   color: $text-color-second;
-  padding-bottom: 32px;
+  padding-bottom: 26px;
 }

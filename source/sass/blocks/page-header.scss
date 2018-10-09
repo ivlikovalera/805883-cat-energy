@@ -1,4 +1,5 @@
 .page-header {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   width: auto;
@@ -8,6 +9,7 @@
 .page-header__logo-image {
   display: inline-block;
   width: 191px;
+  height: 39px;
   margin-left: 20px;
   margin-right: 10px;
 }

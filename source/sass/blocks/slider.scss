@@ -8,14 +8,14 @@
   letter-spacing: normal;
   color: $text-color-main;
   text-transform: uppercase;
-}
 
-.slider__text--before {
-  text-align: left;
-}
+  &--before {
+    text-align: left;
+  }
 
-.slider__text--after {
-  text-align: right;
+  &--after {
+    text-align: right;
+  }
 }
 
 .slider__text-inner {
@@ -23,4 +23,13 @@
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.slider__item {
+  margin-bottom: 18px;
+
+  &--after {
+    display: none;
+  }
 }

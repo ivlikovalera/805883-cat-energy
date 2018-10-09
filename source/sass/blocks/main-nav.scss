@@ -9,13 +9,35 @@
 }
 
 .main-nav__toggle {
-  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: block;
   width: 25px;
   height: 19px;
-  font-size: 0;
-  background-color: red;
+  background-color: $color-main;
   border: 0;
   cursor: pointer;
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+
+  position: absolute;
+  top: 10px;
+  left: -15px;
+
+  width: 25px;
+  height: 2px;
+
+  background-color: $third-color;
+  box-shadow: 0 8px 0 0 $third-color, 0 16px 0 0 $third-color;
+}
+
+.main-nav--closed .main-nav__toggle:active::before {
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 0 0 rgba(255, 255, 255, 0.3), 0 16px 0 0 rgba(255, 255, 255, 0.3);
 }
 
 .main-nav__wrapper {

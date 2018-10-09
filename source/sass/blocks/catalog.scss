@@ -1,5 +1,5 @@
 .catalog {
-  width: 280px;
+  width: 320px;
   margin: 0 auto;
 }
 
@@ -13,25 +13,28 @@
   letter-spacing: normal;
   text-align: left;
   color: $text-color-main;
-  border-top: 1px solid lightgray;
-  border-bottom: 1px solid lightgray;
-  padding-top: 31px;
-  padding-bottom: 35px;
-  padding-left: 22px;
+  border-top: 1px solid $grey;
+  border-bottom: 1px solid $grey;
+  padding-top: 16px;
+  padding-bottom: 26px;
+  padding-left: 20px;
   margin: 0;
-  margin-left: -20px;
-  margin-right: -20px;
 }
 
 .catalog__item {
   display: flex;
+  width: 320px;
+  margin: 0 auto;
   flex-direction: column;
-  border-bottom: 1px solid lightgray;
-  padding-bottom: 25px;
-  margin-left: -20px;
-  margin-right: -20px;
+  border-bottom: 1px solid $grey;
+  padding-bottom: 24px;
 }
 
 .catalog-info__wrapper {
   display: flex;
+}
+
+.catalog-info__picture {
+  display: block;
+  margin-left: 20px;
 }

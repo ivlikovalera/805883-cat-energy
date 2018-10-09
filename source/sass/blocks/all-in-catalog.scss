@@ -1,3 +1,7 @@
+.all-in-catalog {
+  position: relative;
+}
+
 .all-in-catalog__subtitle {
   font-family: $font-family-main;
   font-size: 16px;
@@ -9,6 +13,23 @@
   text-align: center;
   color: $text-color-main;
   text-transform: uppercase;
+  margin-top: 80px;
+  margin-bottom: 0;
+}
+
+.all-in-catalog__subtitle::before,
+.all-in-catalog__subtitle::after {
+  content: "";
+  position: absolute;
+  top: 39px;
+  left: 145px;
+  width: 31px;
+  height: 2px;
+  background-color: $grey;
+}
+
+.all-in-catalog__subtitle::before {
+  transform: rotate(90deg);
 }
 
 .all-in-catalog__text {
@@ -21,4 +42,6 @@
   letter-spacing: normal;
   text-align: center;
   color: $text-color-second;
+  margin-top: 8px;
+  margin-bottom: 20px;
 }

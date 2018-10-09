@@ -16,25 +16,35 @@
   text-align: left;
   color: $text-color-main;
   text-transform: uppercase;
-  padding-top: 25px;
+  padding-top: 23px;
+  padding-bottom: 10px;
+}
+
+.table__caption:nth-child(3) {
+  padding-top: 18px;
 }
 
 .table__stroke {
   font-family: $font-family-second;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 14px;
   font-weight: 400;
   font-style: normal;
   font-stretch: normal;
   letter-spacing: normal;
   color: $text-color-second;
+  margin-top: 15px;
 }
 
-.table__cell--right {
-  text-align: right;
-}
+.table__cell {
+  padding: 0;
 
-.table__cell--left {
-  text-align: left;
-  margin-right: auto;
+  &--right {
+    text-align: right;
+  }
+
+  &--left {
+    text-align: left;
+    margin-right: auto;
+  }
 }

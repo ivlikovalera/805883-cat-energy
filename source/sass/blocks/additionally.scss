@@ -13,9 +13,9 @@
   letter-spacing: normal;
   text-align: left;
   color: $text-color-main;
-  border-bottom: 1px solid lightgray;
-  padding-bottom: 30px;
-  padding-top: 31px;
+  border-bottom: 1px solid $grey;
+  padding-bottom: 33px;
+  padding-top: 30px;
   margin: 0;
 }
 
@@ -51,9 +51,9 @@
 }
 
 .additionally__item {
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid $grey;
   padding-top: 14px;
-  padding-bottom: 17px;
+  padding-bottom: 16px;
 }
 
 .additionally__bonus {
@@ -66,7 +66,6 @@
   margin-bottom: 35px;
 }
 
-
 .additionally__bonus-text {
   font-family: $font-family-second;
   font-size: 16px;
@@ -77,5 +76,5 @@
   letter-spacing: normal;
   text-align: center;
   color: $text-color-on_green;
-  padding: 190px 60px 43px 60px;
+  padding: 187px 50px 43px 50px;
 }

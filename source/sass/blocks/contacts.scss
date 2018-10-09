@@ -3,6 +3,7 @@
   width: 320px;
   margin: 0 auto;
   padding: 0;
+  padding-bottom: 9px;
 
   &--grey {
     display: flex;
@@ -26,8 +27,7 @@
   text-transform: uppercase;
   padding-left: 20px;
   padding-right: 18px;
-  margin-top: 31px;
-  margin-bottom: 26px;
+  margin-top: 30px;
 }
 
 .contacts__text {
@@ -41,6 +41,5 @@
   text-align: left;
   color: $text-color-second;
   padding-right: 20px;
-  margin-top: 33px;
-  margin-bottom: 28px;
+  margin-top: 30px;
 }
