@@ -15,15 +15,15 @@
       <nav class="main-nav main-nav--closed">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a class="site-list__link" href="index.html">Главная</a>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="index.html">Главная</a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
             </li>
-            <li class="site-list__item site-list__item--active">
-              <a class="site-list__link">Подбор программы</a>
+            <li class="main-nav__item main-nav__item--active">
+              <a class="main-nav__link">Подбор программы</a>
             </li>
           </ul>
         </div>
@@ -70,17 +70,17 @@
             </div>
             <div class="form__inner form__inner--contact">
               <label class="form__label" for="phone">Телефон:<sup>*</sup></label>
-              <input class="form__input-text" id="phone" type="tel" name="tel-human" placeholder="8(960)900-60-90" required>
+              <input class="form__input-text" id="phone" type="tel" name="tel-human" placeholder="8 (960) 900-60-90" required>
             </div>
           </fieldset>
           <fieldset class="form__fieldset">
-            <legend class="form__legend">Комментарий</legend>
+            <legend class="form__legend form__legend--textarea">Комментарий</legend>
             <div class="form__inner form__inner--textarea">
               <textarea class="form__input-text form__input-text--textarea" rows="7" cols="auto" name="text" placeholder="Расскажите обо всех повадках кота"></textarea>
             </div>
           </fieldset>
           <fieldset class="form__fieldset">
-            <legend class="form__legend">Дополнительно</legend>
+            <legend class="form__legend form__legend--checkbox">Дополнительно</legend>
             <div class="form__inner form__inner--checkbox">
               <input class="form__input-checkbox" id="sweetener" type="checkbox" name="sweetener" checked>
               <label class="form__label" for="sweetener">Сахарозаменитель</label>

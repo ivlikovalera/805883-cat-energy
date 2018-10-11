@@ -33,7 +33,8 @@
 
   &--radio {
     padding-left: 20px;
-    padding-bottom: 18px;
+    padding-bottom: 8px;
+    margin-bottom: 12px;
   }
 
   &--contact {
@@ -44,12 +45,13 @@
   &--textarea {
     padding-left: 20px;
     padding-right: 20px;
+    padding-top: 5px;
     margin: 0;
   }
 
   &--checkbox {
     width: 210px;
-    padding-top: 12px;
+    padding-top: 10px;
     padding-left: 20px;
   }
 }
@@ -67,6 +69,14 @@
   padding-left: 20px;
   padding-top: 31px;
   padding-bottom: 31px;
+
+  &--textarea {
+    padding-top: 13px;
+  }
+
+  &--checkbox {
+    padding-top: 11px;
+  }
 }
 
 .form__label {
@@ -113,6 +123,7 @@
 }
 
 .form__input-radio {
+  margin-bottom: 5px;
   margin-right: 16px;
 }
 
@@ -122,5 +133,7 @@
 
 .form__button {
   border: 0;
-  margin-left: 20px;
+  margin-left: 19px;
+  margin-top: 26px;
+  padding-top: 5px;
 }
