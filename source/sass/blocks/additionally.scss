@@ -13,7 +13,7 @@
   letter-spacing: normal;
   text-align: left;
   color: $text-color-main;
-  border-bottom: 1px solid $grey;
+  border-bottom: 1px solid $separator-menu;
   padding-bottom: 33px;
   padding-top: 30px;
   margin: 0;
@@ -51,7 +51,7 @@
 }
 
 .additionally__item {
-  border-bottom: 1px solid $grey;
+  border-bottom: 1px solid $separator-menu;
   padding-top: 14px;
   padding-bottom: 16px;
 }

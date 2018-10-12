@@ -13,8 +13,8 @@
   letter-spacing: normal;
   text-align: left;
   color: $text-color-main;
-  border-top: 1px solid $grey;
-  border-bottom: 1px solid $grey;
+  border-top: 1px solid $separator-menu;
+  border-bottom: 1px solid $separator-main;
   padding-top: 16px;
   padding-bottom: 26px;
   padding-left: 20px;
@@ -26,7 +26,7 @@
   width: 320px;
   margin: 0 auto;
   flex-direction: column;
-  border-bottom: 1px solid $grey;
+  border-bottom: 1px solid $separator-main;
   padding-bottom: 24px;
 }
 
