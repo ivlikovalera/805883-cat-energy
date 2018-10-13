@@ -1,4 +1,4 @@
-.present {
+.promo {
   width: 320px;
   margin: 0 auto;
   background-image: url("../img/index-background-mobile@1x.jpg");
@@ -8,12 +8,12 @@
   margin-bottom: 23px;
 }
 
-.present__picture {
+.promo__picture {
   margin-left: 20px;
   margin-bottom: 2px;
 }
 
-.present__title {
+.promo__title {
   font-family: $font-family-main;
   font-size: 36px;
   line-height: 36px;
@@ -28,7 +28,7 @@
   padding-bottom: 21px;
 }
 
-.present__slogan {
+.promo__slogan {
   font-family: $font-family-main;
   font-size: 14px;
   line-height: 14px;
@@ -44,7 +44,7 @@
   padding-bottom: 29px;
 }
 
-.present__button {
+.promo__button {
   width: 280px;
   font-size: 14px;
   line-height: 18px;
