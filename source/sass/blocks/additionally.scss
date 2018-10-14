@@ -37,6 +37,7 @@
   display: flex;
   width: 280px;
   justify-content: space-between;
+  padding-bottom: 15px;
 }
 
 .additionally__text {
@@ -48,12 +49,14 @@
   font-stretch: normal;
   letter-spacing: normal;
   color: $text-color-second;
+  padding-top: 12px;
+  margin: 0;
 }
 
 .additionally__item {
   border-bottom: 1px solid $separator-menu;
   padding-top: 14px;
-  padding-bottom: 16px;
+  padding-bottom: 17px;
 }
 
 .additionally__bonus {

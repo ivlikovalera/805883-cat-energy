@@ -36,8 +36,11 @@
   text-align: left;
   color: $text-color-main;
   border-top: 1px solid $separator-menu;
+  border-bottom: 1px solid $separator-main;
   margin: 0;
-  padding-left: 22px;
+  padding-left: 20px;
+  padding-top: 15px;
+  padding-bottom: 27px;
 }
 
 @media (min-width: $tablet-width) {
