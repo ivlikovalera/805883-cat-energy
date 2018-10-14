@@ -30,6 +30,10 @@
   padding-bottom: 24px;
 }
 
+.catalog__item:first-of-type {
+  border-top: 1px solid $separator-main;
+}
+
 .catalog-info__wrapper {
   display: flex;
 }
