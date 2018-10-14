@@ -10,7 +10,9 @@
 
 .main-nav__list {
   list-style: none;
+  margin: 0;
   padding: 0;
+  margin-top: 9px;
 }
 
 .main-nav__link {
@@ -23,8 +25,8 @@
   width: 320px;
   margin: 0 auto;
   box-sizing: border-box;
-  padding-bottom: 24px;
-  padding-top: 24px;
+  padding-bottom: 22px;
+  padding-top: 23px;
   border-top: 1px solid $separator-menu;
   font-family: $font-family-main;
   font-weight: 500;
@@ -36,8 +38,8 @@
 
 .main-nav__toggle {
   position: absolute;
-  top: 12px;
-  right: 20px;
+  top: 15px;
+  right: 22px;
   display: block;
   width: 30px;
   height: 20px;
@@ -91,7 +93,6 @@
     background-color: rgba(255, 255, 255, 0.3);
   }
 }
-
 @media (min-width: $tablet-width) {
   .main-nav {
     width: auto;

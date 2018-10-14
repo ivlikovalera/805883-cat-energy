@@ -17,7 +17,7 @@
   color: $text-color-main;
   padding-left: 20px;
   padding-top: 17px;
-  padding-bottom: 26px;
+  padding-bottom: 24px;
   margin: 0;
 }
 
@@ -61,12 +61,12 @@
   border-radius: 3px;
 
   &--left {
-    padding: 14px 43px 15px 43px;
+    padding: 12px 41px 18px 43px;
     margin-right: 32px;
   }
 
   &--right {
-    padding: 14px 23px 15px 23px;
+    padding: 14px 19px 15px 23px;
   }
 }
 
@@ -86,14 +86,14 @@
 
   &--left {
     position: absolute;
-    top: 270px;
+    top: 268px;
     left: 45px;
   }
 
   &--right {
     position: absolute;
-    top: 270px;
-    left: 205px;
+    top: 268px;
+    left: 200px;
   }
 }
 
