@@ -72,6 +72,30 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page-header {
+    &--desktop {
+      background-image: url("../../img/index-background-desktop@1x.jpg");
+      background-repeat: no-repeat;
+      background-position: 112% 0%;
+    }
+  }
+
+  .page-header__inner {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 1220px;
+    margin-top: 48px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .page-header__title {
+    padding-left: 10px;
+    padding-top: 66px;
+    padding-bottom: 80px;
+  }
+
   .page-header__logo {
     height: 60px;
   }

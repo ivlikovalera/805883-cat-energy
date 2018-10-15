@@ -99,3 +99,30 @@
     order: 2;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .promo {
+    width: 895px;
+    margin-bottom: 90px;
+    height: 565px; //временно для сетки//
+  }
+
+  .promo__title {
+    margin: 0;
+    padding-top: 100px;
+    padding-bottom: 42px;
+  }
+
+  .promo__slogan {
+    padding-bottom: 27px;
+  }
+
+  .promo__picture {
+    margin-left: 560px;
+  }
+
+  .promo__button {
+    margin-top: -470px;
+    order: 2;
+  }
+}

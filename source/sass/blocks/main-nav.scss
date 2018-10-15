@@ -131,3 +131,31 @@
     margin-right: 36px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    width: 478px;
+    margin: 0;
+    margin-left: auto;
+    background-color: transparent;
+  }
+
+  .main-nav__item {
+    width: 168px;
+    font-size: 20px;
+    text-align: left;
+    margin: 0;
+    margin-right: 35px;
+  }
+
+  .main-nav__item:first-child {
+    width: 69px;
+    margin-right: 38px;
+  }
+
+  .main-nav__link {
+    &--desktop {
+      color: $text-color-on-back;
+    }
+  }
+}
