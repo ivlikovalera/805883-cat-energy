@@ -1,3 +1,9 @@
+.slider {
+  @media (min-width: $tablet-width) {
+    background-image: linear-gradient(to top, $color-second 67%, $color-main 23%);
+  }
+}
+
 .slider__text {
   font-family: $font-family-main;
   font-size: 16px;
@@ -17,6 +23,10 @@
   &--after {
     text-align: right;
   }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .slider__text-inner {
@@ -25,6 +35,11 @@
   justify-content: space-between;
   margin: 0 auto;
   padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 574px;
+    padding-bottom: 55px;
+  }
 }
 
 .slider__item {
@@ -32,5 +47,10 @@
 
   &--after {
     display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 318px; 
+    //такое число только до замены картинки на адаптивную//
   }
 }
