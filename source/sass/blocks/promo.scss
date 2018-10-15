@@ -6,11 +6,24 @@
   background-size: 320px 305px;
   color: $text-color-on_back;
   margin-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    margin: 0 auto;
+    background-image: none;
+    color: $text-color-main;
+    margin-bottom: 10px;
+    height: 850px; //временно для сетки//
+  }
 }
 
 .promo__picture {
   margin-left: 20px;
   margin-bottom: 2px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 200px;
+  }
 }
 
 .promo__title {
@@ -26,6 +39,16 @@
   margin: 0;
   padding-top: 29px;
   padding-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    color: $text-color-main;
+    padding-top: 50px;
+    padding-bottom: 43px;
+    padding-left: 115px;
+  }
 }
 
 .promo__slogan {
@@ -42,60 +65,31 @@
   margin: 0;
   padding-top: 0;
   padding-bottom: 27px;
-}
 
-.promo__button {
-  width: 280px;
-  font-size: 14px;
-  line-height: 18px;
-  padding-top: 12px;
-  margin-left: 20px;
-}
-
-@media (min-width: $tablet-width) {
-  .promo {
-    width: 619px;
-    background-image: none;
-    color: $text-color-main;
-    margin-left: 120px;
-    margin-right: 30px;
-    margin-bottom: 10px;
-    height: 850px; //временно для сетки//
-  }
-
-  .promo__title {
-    font-family: $font-family-main;
-    font-size: 60px;
-    line-height: 60px;
-    font-weight: 400;
-    text-align: left;
-    color: $text-color-main;
-    margin: 0;
-    padding-top: 50px;
-    padding-bottom: 40px;
-  }
-
-  .promo__slogan {
-    font-family: $font-family-main;
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
-    font-weight: 400;
     text-align: left;
     color: $text-color-main;
     padding-bottom: 27px;
+    padding-left: 117px;
   }
+}
 
-  .promo__picture {
-    margin-left: 160px;
-  }
+.promo__button {
+  font-size: 14px;
+  line-height: 18px;
+  padding: 11px 74px 11px 73px;
+  margin-left: 20px;
 
-  .promo__button {
+  @media (min-width: $tablet-width) {
     width: 245px;
     height: 52px;
     font-size: 20px;
-    padding-top: 16px;
-    margin-left: 0;
-    margin-top: -475px;
+    line-height: 20px;
+    padding: 16px 27px 16px 27px;
+    margin-left: -365px;
+    margin-top: -445px;
     order: 2;
   }
 }
