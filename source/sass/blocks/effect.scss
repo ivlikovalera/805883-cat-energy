@@ -3,6 +3,14 @@
   margin: 0 auto;
   margin-top: 12px;
   margin-bottom: 19px;
+
+  @media (min-width: $tablet-width) {
+    width: 625px;
+    margin-top: 45px;
+    margin-bottom: 42px;
+    margin-left: 30px;
+    padding: 0;
+  }
 }
 
 .effect__subtitle {
@@ -17,12 +25,23 @@
   color: $text-color-main;
   margin: 0;
   padding-bottom: 31px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    padding-bottom: 0;
+  }
 }
 
 .effect__list {
   list-style: none;
   margin: 0;
   padding-left: 80px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+  }
 }
 
 .effect__list-item {
@@ -36,4 +55,16 @@
   text-align: left;
   color: $text-color-second;
   padding-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    width: 245px;
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 185px;
+    padding-bottom: 59px;
+
+    &--right {
+      margin-left: 135px;
+    }
+  }
 }

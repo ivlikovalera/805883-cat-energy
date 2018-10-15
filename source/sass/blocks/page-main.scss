@@ -1,4 +1,8 @@
 .page-main {
   width: auto;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
 }
