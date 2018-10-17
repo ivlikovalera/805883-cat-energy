@@ -1,6 +1,4 @@
 .promo {
-  width: 320px;
-  margin: 0 auto;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: 320px 305px;
@@ -8,12 +6,19 @@
   margin-bottom: 23px;
 
   @media (min-width: $tablet-width) {
-    width: 768px;
+    width: 708px;
     margin: 0 auto;
     background-image: none;
     color: $text-color-main;
     margin-bottom: 10px;
-    height: 850px; //временно для сетки//
+    min-height: 850px; //временно для сетки//
+
+    @media (min-width: $desktop-width) {
+      width: 1220px;
+      margin: 0 auto;
+      margin-top: 40px;
+      min-height: 535px; //временно для сетки//
+    }
   }
 }
 
@@ -22,12 +27,17 @@
   margin-bottom: 2px;
 
   @media (min-width: $tablet-width) {
-    margin-left: 200px;
+    margin-left: 230px;
+  }
+  
+   @media (min-width: $desktop-width) {
+     margin: 0;
+     margin-top: -50px;
+     margin-left: 400px;
   }
 }
 
 .promo__title {
-  font-family: $font-family-main;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
@@ -46,13 +56,18 @@
     text-align: left;
     color: $text-color-main;
     padding-top: 50px;
-    padding-bottom: 43px;
-    padding-left: 115px;
+    padding-bottom: 42px;
+    padding-left: 88px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 61px;
+    padding-bottom: 42px;
+    padding-left: 80px;
   }
 }
 
 .promo__slogan {
-  font-family: $font-family-main;
   font-size: 14px;
   line-height: 14px;
   font-weight: 400;
@@ -72,7 +87,12 @@
     text-align: left;
     color: $text-color-main;
     padding-bottom: 27px;
-    padding-left: 117px;
+    padding-left: 88px;
+  }
+  
+  @media (min-width: $desktop-width) {
+    padding-bottom: 42px;
+    padding-left: 80px;
   }
 }
 
@@ -88,35 +108,13 @@
     font-size: 20px;
     line-height: 20px;
     padding: 16px 27px 16px 27px;
-    margin-left: -365px;
+    margin-left: -425px;
     margin-top: -445px;
     order: 2;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .promo {
-    width: 895px;
-    margin-bottom: 90px;
-    height: 565px; //временно для сетки//
-  }
-
-  .promo__title {
-    margin: 0;
-    padding-top: 100px;
-    padding-bottom: 42px;
-  }
-
-  .promo__slogan {
-    padding-bottom: 27px;
-  }
-
-  .promo__picture {
-    margin-left: 560px;
-  }
-
-  .promo__button {
-    margin-top: -470px;
-    order: 2;
+  @media (min-width: $desktop-width) {
+    margin-left: -605px;
+    margin-top: -360px;
   }
 }
