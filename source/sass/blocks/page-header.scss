@@ -27,7 +27,6 @@
     width: 1220px;
     margin: 0 auto;
     margin-top: 48px;
-
   }
 }
 
@@ -53,12 +52,11 @@
 }
 
 .page-header__small-inner {
-
   @media (min-width: $tablet-width) {
     width: 708px;
     margin: 0 auto;
   }
-  
+
   @media (min-width: $desktop-width) {
     width: 1220px;
     margin: 0 auto;

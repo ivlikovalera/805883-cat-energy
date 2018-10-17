@@ -29,11 +29,11 @@
   @media (min-width: $tablet-width) {
     margin-left: 230px;
   }
-  
-   @media (min-width: $desktop-width) {
-     margin: 0;
-     margin-top: -50px;
-     margin-left: 400px;
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-top: -50px;
+    margin-left: 400px;
   }
 }
 
@@ -89,7 +89,7 @@
     padding-bottom: 27px;
     padding-left: 88px;
   }
-  
+
   @media (min-width: $desktop-width) {
     padding-bottom: 42px;
     padding-left: 80px;
