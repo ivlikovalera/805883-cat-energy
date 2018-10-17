@@ -6,12 +6,29 @@
   width: 320px;
   height: 362px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 767px;
+    height: 395px;
+    background-color: beige; //временно для демонстрации места под карту//
+  }
 }
 
 .page-footer__inner {
   width: 320px;
   margin: 0 auto;
   background-color: $color-second;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 28px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
 }
 
 .page-footer__logo-image {
@@ -19,6 +36,10 @@
   margin-right: 96px;
   margin-top: 39px;
   margin-bottom: 27px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .page-footer__copyright {
@@ -26,6 +47,11 @@
   margin: 0 auto;
   padding-top: 21px;
   padding-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    width: 165px;
+    margin: 0;
+  }
 }
 
 .page-footer__copyright-link {
