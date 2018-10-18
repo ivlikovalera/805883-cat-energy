@@ -2,6 +2,12 @@
   width: 140px;
   table-layout: fixed;
   margin-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 248px;
+    margin: 0 auto;
+    margin-bottom: 33px;
+  }
 }
 
 .table__caption {
@@ -18,6 +24,15 @@
   text-transform: uppercase;
   padding-top: 23px;
   padding-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    width: 135px;
+    margin: 0 auto;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 39px;
+    padding-bottom: 28px;
+  }
 }
 
 .table__caption:nth-child(3) {
@@ -34,6 +49,11 @@
   letter-spacing: normal;
   color: $text-color-second;
   margin-top: 15px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .table__cell {

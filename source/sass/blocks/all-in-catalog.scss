@@ -1,5 +1,13 @@
 .all-in-catalog {
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    background-color: $color-main;
+    border: 1px solid $color-second;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .all-in-catalog__subtitle {
@@ -15,6 +23,12 @@
   text-transform: uppercase;
   margin-top: 80px;
   margin-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 135px;
+    font-size: 20px;
+    margin-top: 166px;
+  }
 }
 
 .all-in-catalog__subtitle::before,
@@ -26,6 +40,14 @@
   width: 31px;
   height: 2px;
   background-color: #d3d3d3;
+
+  @media (min-width: $tablet-width) {
+    width: 135px;
+    height: 1px;
+    width: 60px;
+    top: 86px;
+    left: 133px;
+  }
 }
 
 .all-in-catalog__subtitle::before {
@@ -44,4 +66,18 @@
   color: $text-color-second;
   margin-top: 8px;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 170px;
+    font-size: 16px;
+    line-height: 18px;
+    margin-top: 28px;
+    margin-bottom: 85px;
+  }
+}
+
+.all-in-catalog__button {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+  }
 }
