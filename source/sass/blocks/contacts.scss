@@ -1,6 +1,6 @@
 .contacts {
   display: flex;
-  width: 320px;
+  width: auto;
   margin: 0 auto;
   padding: 0;
   padding-bottom: 25px;
@@ -8,14 +8,22 @@
   &--grey {
     display: flex;
     background-color: $color-second;
-    width: 320px;
+    width: auto;
     margin: 0 auto;
   }
 
   @media (min-width: $tablet-width) {
-    width: 768px;
+    max-width: 768px;
     padding-top: 30px;
     padding-bottom: 56px;
+    margin: 0;
+
+    &--grey {
+      background-color: $color-second;
+      background-size: contain;
+      max-width: 768px;
+      margin: 0;
+    }
   }
 }
 
