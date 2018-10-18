@@ -1,6 +1,10 @@
 .additionally {
   width: 280px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+  }
 }
 
 .additionally__title {
@@ -17,6 +21,27 @@
   padding-bottom: 33px;
   padding-top: 30px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 633px;
+    margin: 0 auto;
+    font-size: 36px;
+    line-height: 36px;
+    border: none;
+    padding-bottom: 75px;
+    padding-top: 0;
+  }
+}
+
+.additionally__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    width: 633px;
+    margin: 0 auto;
+    padding-bottom: 22px;
+  }
 }
 
 .additionally__subtitle {
@@ -31,6 +56,11 @@
   color: #222222;
   text-transform: uppercase;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .additionally__inner {
@@ -38,6 +68,11 @@
   width: 280px;
   justify-content: space-between;
   padding-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    padding-bottom: 0;
+  }
 }
 
 .additionally__text {
@@ -51,12 +86,38 @@
   color: $text-color-second;
   padding-top: 12px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: 52px;
+  }
 }
 
 .additionally__item {
   border-bottom: 1px solid $separator-menu;
   padding-top: 14px;
   padding-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid $separator-menu;
+    padding-bottom: 0;
+  }
+}
+
+.additionally__button {
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    box-sizing: border-box;
+    padding: 10px 287px 10px 285px;
+    margin-bottom: 40px;
+  }
 }
 
 .additionally__bonus {
@@ -67,6 +128,14 @@
   background-repeat: no-repeat;
   margin-top: 39px;
   margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 69px;
+    margin-bottom: 76px;
+  }
 }
 
 .additionally__bonus-text {
@@ -80,4 +149,9 @@
   text-align: center;
   color: $text-color-on_back;
   padding: 187px 50px 43px 50px;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    padding: 75px 125px 69px 420px;
+  }
 }
