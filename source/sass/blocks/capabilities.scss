@@ -6,6 +6,13 @@
     padding-left: 30px;
     padding-right: 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 1220px;
+    margin: 0 auto;
+  }
 }
 
 .capabilities__item {
@@ -14,6 +21,11 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 29px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    margin-bottom: 73px;
   }
 }
 
@@ -36,6 +48,12 @@
     padding-top: 78px;
     padding-left: 53px;
     padding-bottom: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 76px;
+    padding-left: 215px;
+    padding-bottom: 75px;
   }
 }
 
@@ -62,6 +80,11 @@
       padding-right: 315px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 56px;
+    padding-bottom: 31px;
+  }
 }
 
 .capabilities__inner {
@@ -77,6 +100,10 @@
     padding-bottom: 62px;
     border: none;
     margin-left: 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
   }
 }
 
