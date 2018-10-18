@@ -9,5 +9,9 @@
   @media (min-width: $desktop-width) {
     max-width: 1440px;
     margin: auto;
+
+    &--footer {
+      background-color: $color-second;
+    }
   }
 }

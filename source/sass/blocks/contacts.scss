@@ -25,6 +25,14 @@
       margin: 0;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 95px;
+    left: 40px;
+    width: 570px;
+    background-color: $color-main;
+  }
 }
 
 .contacts__title {
@@ -50,6 +58,11 @@
     padding-left: 70px;
     padding-top: 35px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 76px;
+    padding-right: 95px;
+  }
 }
 
 .contacts__text {
@@ -72,6 +85,12 @@
     padding-left: 35px;
     padding-right: 70px;
     text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    padding-right: 90px;
+    text-align: left;
   }
 }
 
