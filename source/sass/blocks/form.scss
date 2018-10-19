@@ -1,6 +1,10 @@
 .form {
   width: 320px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 628px;
+  }
 }
 
 .form__fieldset {
@@ -14,9 +18,24 @@
 
 .form__fieldset:nth-of-type(1),
 .form__fieldset:nth-of-type(2) {
-  border-bottom: solid 1px $separator-main;
+  border-bottom: 1px solid $separator-main;
   padding-top: 20px;
   padding-bottom: 8px;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+}
+
+.form__fieldset:nth-of-type(2) {
+  @media (min-width: $tablet-width) {
+    border: 1px solid $separator-main;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    padding-left: 28px;
+    margin-top: 56px;
+    margin-bottom: 66px;
+  }
 }
 
 .form__inner {
@@ -54,6 +73,20 @@
     padding-bottom: 14px;
     padding-left: 20px;
   }
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    padding: 0;
+
+    &--textarea {
+      padding-bottom: 50px;
+    }
+
+    &--checkbox {
+      width: 225px;
+      padding-bottom: 32px;
+    }
+  }
 }
 
 .form__legend {
@@ -77,10 +110,24 @@
   &--checkbox {
     padding-top: 6px;
   }
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    padding-left: 0;
+    padding-bottom: 70px;
+
+    &--checkbox {
+      padding-bottom: 53px;
+    }
+
+    &--textarea {
+      padding-top: 56px;
+    }
+  }
 }
 
 .form__label {
-  font-family: $font-family-main;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
@@ -90,11 +137,15 @@
   text-align: left;
   color: $third-color;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .form__input-text {
   flex-grow: 1;
-  font-family: $font-family-main;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
@@ -117,9 +168,23 @@
     margin-left: 0;
     margin-bottom: 0;
   }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    padding-left: 20px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-left: 16px;
+
+    &--textarea {
+      margin-left: 0;
+    }
+  }
 }
 
 .form__input-text::placeholder {
+  font-family: $font-family-main;
   color: $text-color-second;
 }
 
@@ -132,11 +197,39 @@
   margin-right: 16px;
 }
 
+.form__wrapper {
+  @media (min-width: $tablet-width) {
+    width: 500px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+.form__tiny-box {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    width: 538px;
+    margin-bottom: 62px;
+  }
+}
+
 .form__button {
   border: 0;
   margin-left: 19px;
   margin-top: 8px;
   padding: 10px 77px 10px 80px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    margin: 0;
+    margin-left: 5px;
+    height: 52px; //не могу переназначить высоту кнопки//
+    padding: 16px 65px 16px 65px;
+  }
 }
 
 .form__tip {
@@ -152,4 +245,10 @@
   margin: 0;
   margin-top: 18px;
   margin-bottom: 31px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    text-align: left;
+    margin: 0;
+  }
 }
