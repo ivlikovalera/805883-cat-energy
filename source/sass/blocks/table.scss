@@ -8,6 +8,10 @@
     margin: 0 auto;
     margin-bottom: 33px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 167px;
+  }
 }
 
 .table__caption {

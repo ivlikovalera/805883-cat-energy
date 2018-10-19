@@ -9,6 +9,10 @@
     flex-wrap: wrap;
     align-items: center;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
 }
 
 .catalog__item {
@@ -25,6 +29,11 @@
     background-color: $color-second;
     margin-bottom: 58px;
     padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    margin-bottom: 60px;
   }
 }
 
@@ -46,6 +55,11 @@
     margin: 0 auto;
     padding-left: 1px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 167px;
+    padding-left: 0;
+  }
 }
 
 .catalog-info__picture {
@@ -65,5 +79,10 @@
     line-height: 20px;
     padding: 10px 93px 10px 92px;
     margin-bottom: 39px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 10px 54px 10px 54px;
+    margin-bottom: 40px;
   }
 }
