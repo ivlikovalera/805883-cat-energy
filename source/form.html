@@ -51,7 +51,8 @@
         <form class="page-main__form form" method="post" action="https://echo.htmlacademy.ru">
           <h2 class="visually-hidden">Анкета</h2>
 
-          <fieldset class="form__fieldset">
+          <div class="form__box form__box--first">
+            <fieldset class="form__fieldset form__fieldset--text">
             <div class="form__inner form__inner--text">
               <label class="form__label" for="name">Имя:
                 <sup>*</sup>
@@ -73,7 +74,7 @@
             </div>
           </fieldset>
 
-          <fieldset class="form__fieldset">
+            <fieldset class="form__fieldset form__fieldset--radio">
             <div class="form__inner form__inner--radio">
               <input class="form__input-radio" id="losing" type="radio" name="target" value="losing-weight" checked>
 
@@ -90,11 +91,13 @@
               <label class="form__label" for="not">Не знаю (Нужен ваш совет)</label>
             </div>
           </fieldset>
+          </div>
 
           <fieldset class="form__fieldset">
             <legend class="form__legend">Контактные данные (владельца&nbsp;кота)</legend>
 
-            <div class="form__inner form__inner--contact">
+            <div class="form__box form__box--second">
+              <div class="form__inner form__inner--contact">
               <label class="form__label" for="email">E-mail:
                 <sup>*</sup>
               </label>
@@ -102,14 +105,15 @@
               <input class="form__input-text" id="email" type="email" name="email-human" placeholder="kuklachev@gmail.com" required>
             </div>
 
-            <div class="form__inner form__inner--contact">
+              <div class="form__inner form__inner--contact">
               <label class="form__label" for="phone">Телефон:
                 <sup>*</sup>
               </label>
 
               <input class="form__input-text" id="phone" type="tel" name="tel-human" placeholder="8 (960) 900-60-90" required>
             </div>
-          </fieldset>
+            </div>
+              </fieldset>
 
           <fieldset class="form__fieldset">
             <legend class="form__legend form__legend--textarea">Комментарий</legend>
@@ -149,7 +153,7 @@
             </div>
           </fieldset>
 
-          <div class="form__tiny-box">
+          <div class="form__box form__box--last">
             <button type="submit" class="form__button button">Отправить заявку</button>
 
             <p class="form__tip">
