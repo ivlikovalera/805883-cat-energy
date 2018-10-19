@@ -1,0 +1,120 @@
+.promo {
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: 320px 305px;
+  color: $text-color-on_back;
+  margin-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    margin: 0 auto;
+    background-image: none;
+    color: $text-color-main;
+    margin-bottom: 10px;
+    min-height: 850px; //временно для сетки//
+
+    @media (min-width: $desktop-width) {
+      width: 1220px;
+      margin: 0 auto;
+      margin-top: 40px;
+      min-height: 535px; //временно для сетки//
+    }
+  }
+}
+
+.promo__picture {
+  margin-left: 20px;
+  margin-bottom: 2px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 230px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    margin-top: -50px;
+    margin-left: 400px;
+  }
+}
+
+.promo__title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: $text-color-on_back;
+  margin: 0;
+  padding-top: 29px;
+  padding-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    color: $text-color-main;
+    padding-top: 50px;
+    padding-bottom: 42px;
+    padding-left: 88px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 61px;
+    padding-bottom: 42px;
+    padding-left: 80px;
+  }
+}
+
+.promo__slogan {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: $text-color-on_back;
+  text-transform: uppercase;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 27px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    color: $text-color-main;
+    padding-bottom: 27px;
+    padding-left: 88px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 42px;
+    padding-left: 80px;
+  }
+}
+
+.promo__button {
+  font-size: 14px;
+  line-height: 18px;
+  padding: 11px 74px 11px 73px;
+  margin-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 245px;
+    height: 52px;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 16px 27px 16px 27px;
+    margin-left: -425px;
+    margin-top: -445px;
+    order: 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -605px;
+    margin-top: -360px;
+  }
+}

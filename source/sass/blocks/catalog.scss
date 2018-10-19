@@ -1,37 +1,88 @@
 .catalog {
-  width: 280px;
+  width: 320px;
   margin: 0 auto;
-}
 
-.catalog__title {
-  font-family: $font-family-main;
-  font-size: 36px;
-  line-height: 60px;
-  font-weight: 400;
-  font-style: normal;
-  font-stretch: normal;
-  letter-spacing: normal;
-  text-align: left;
-  color: $text-color-main;
-  border-top: 1px solid lightgray;
-  border-bottom: 1px solid lightgray;
-  padding-top: 31px;
-  padding-bottom: 35px;
-  padding-left: 22px;
-  margin: 0;
-  margin-left: -20px;
-  margin-right: -20px;
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
 }
 
 .catalog__item {
   display: flex;
+  width: 320px;
+  margin: 0 auto;
   flex-direction: column;
-  border-bottom: 1px solid lightgray;
-  padding-bottom: 25px;
-  margin-left: -20px;
-  margin-right: -20px;
+  border-bottom: 1px solid $separator-main;
+  padding-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    border: none;
+    background-color: $color-second;
+    margin-bottom: 58px;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    margin-bottom: 60px;
+  }
+}
+
+.catalog__item:first-of-type {
+  border-top: 1px solid $separator-main;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }
 
 .catalog-info__wrapper {
   display: flex;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    align-items: center;
+    width: 252px;
+    margin: 0 auto;
+    padding-left: 1px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 167px;
+    padding-left: 0;
+  }
+}
+
+.catalog-info__picture {
+  display: block;
+  padding-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    min-width: 161px;
+    margin: 0 auto;
+  }
+}
+
+.catalog-info__button {
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 10px 93px 10px 92px;
+    margin-bottom: 39px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 10px 54px 10px 54px;
+    margin-bottom: 40px;
+  }
 }

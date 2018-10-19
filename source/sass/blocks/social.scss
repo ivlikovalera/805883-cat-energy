@@ -1,14 +1,27 @@
 .social {
   width: 280px;
-  border-top: 1px solid lightgray;
-  border-bottom: 1px solid lightgray;
+  border-top: 1px solid $line-on-identical-color;
+  border-bottom: 1px solid $line-on-identical-color;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }
 
 .social__list {
-  width: 130px;
+  width: 128px;
+  margin-left: 73px;
+  margin-right: 79px;
+  margin-top: 20px;
+  margin-bottom: 19px;
+  padding: 0;
   list-style: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 15px;
+  }
 }

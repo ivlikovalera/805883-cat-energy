@@ -1,7 +1,21 @@
 .effect {
-  width: 280px;
-  margin: 0 auto;
-  margin-top: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 0;
+  margin-bottom: 19px;
+
+  @media (min-width: $tablet-width) {
+    width: 625px;
+    margin-top: 45px;
+    margin-bottom: 42px;
+    margin-left: 30px;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
+  }
 }
 
 .effect__subtitle {
@@ -15,14 +29,25 @@
   text-align: left;
   color: $text-color-main;
   margin: 0;
-  padding-bottom: 35px;
+  padding-bottom: 31px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    padding-bottom: 0;
+  }
 }
 
 .effect__list {
   list-style: none;
   margin: 0;
   padding-left: 80px;
-  margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+  }
 }
 
 .effect__list-item {
@@ -35,5 +60,17 @@
   letter-spacing: normal;
   text-align: left;
   color: $text-color-second;
-  padding-bottom: 32px;
+  padding-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    width: 245px;
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 185px;
+    padding-bottom: 59px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 183px;
+  }
 }

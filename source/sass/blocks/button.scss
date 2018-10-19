@@ -9,16 +9,16 @@
   text-align: center;
   text-decoration: none;
   background-color: $button-color-main;
-  color: $text-color-on_green;
+  color: $text-color-on_back;
   box-sizing: border-box;
-  width: 280px;
-  height: 40px;
+  padding: 10px 108px 10px 111px;
   margin: 0 auto;
-  padding-top: 12px;
 
   &--grey {
     background-color: $button-color-second;
     color: $text-color-second;
+    box-sizing: border-box;
+    padding: 10px 94px 10px 97px;
   }
 }
 
@@ -34,10 +34,10 @@
 }
 
 .button:active {
-  color: $text-color-on_green-down;
+  color: $text-color-on_back-down;
 }
 
 .button--grey:active {
-  background-color: #ebebeb;
+  background-color: $button-color-second-action;
   color: rgba(68, 68, 68, 0.3);
 }

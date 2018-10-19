@@ -2,6 +2,16 @@
   width: 140px;
   table-layout: fixed;
   margin-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 248px;
+    margin: 0 auto;
+    margin-bottom: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 167px;
+  }
 }
 
 .table__caption {
@@ -16,25 +26,49 @@
   text-align: left;
   color: $text-color-main;
   text-transform: uppercase;
-  padding-top: 25px;
+  padding-top: 23px;
+  padding-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    width: 135px;
+    margin: 0 auto;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 39px;
+    padding-bottom: 28px;
+  }
+}
+
+.table__caption:nth-child(3) {
+  padding-top: 18px;
 }
 
 .table__stroke {
   font-family: $font-family-second;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 14px;
   font-weight: 400;
   font-style: normal;
   font-stretch: normal;
   letter-spacing: normal;
   color: $text-color-second;
+  margin-top: 15px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
-.table__cell--right {
-  text-align: right;
-}
+.table__cell {
+  padding: 0;
 
-.table__cell--left {
-  text-align: left;
-  margin-right: auto;
+  &--right {
+    text-align: right;
+  }
+
+  &--left {
+    text-align: left;
+    margin-right: auto;
+  }
 }
