@@ -6,6 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/style.css">
+<style>
+  HTML {
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-image: url(back/cat-energy-form-mobile-all.png);
+  }
+  @media (min-width: 768px) {
+    HTML {
+      background-image: url(back/cat-energy-form-tablet.jpg);
+    }
+  }
+  @media (min-width: 1300px) {
+    HTML {
+      background-image: url(back/cat-energy-form-desktop.jpg);
+    }
+  }
+</style>
+<link href="pixel-glass/styles.css" rel="stylesheet">
+<script src="pixel-glass/script.js"></script>
   </head>
 
   <body class="page">
@@ -52,7 +71,7 @@
           <h2 class="visually-hidden">Анкета</h2>
 
           <div class="form__box form__box--first">
-            <fieldset class="form__fieldset form__fieldset--text">
+            <fieldset class="form__group form__group--text">
             <div class="form__inner form__inner--text">
               <label class="form__label" for="name">Имя:
                 <sup>*</sup>
@@ -74,7 +93,7 @@
             </div>
           </fieldset>
 
-            <fieldset class="form__fieldset form__fieldset--radio">
+            <fieldset class="form__group form__group--radio">
             <div class="form__inner form__inner--radio">
               <input class="form__input-radio" id="losing" type="radio" name="target" value="losing-weight" checked>
 
@@ -93,8 +112,8 @@
           </fieldset>
           </div>
 
-          <fieldset class="form__fieldset">
-            <legend class="form__legend">Контактные данные (владельца&nbsp;кота)</legend>
+          <fieldset class="form__group">
+            <legend class="form__group-title">Контактные данные (владельца&nbsp;кота)</legend>
 
             <div class="form__box form__box--second">
               <div class="form__inner form__inner--contact">
@@ -115,16 +134,16 @@
             </div>
               </fieldset>
 
-          <fieldset class="form__fieldset">
-            <legend class="form__legend form__legend--textarea">Комментарий</legend>
+          <div class="form__group">
+            <label class="form__group-title form__group-title--textarea" for="comment">Комментарий</legend>
 
             <div class="form__inner form__inner--textarea">
-              <textarea class="form__input-text form__input-text--textarea" rows="7" cols="5" name="text" placeholder="Расскажите обо всех повадках кота"></textarea>
+              <textarea class="form__input-text form__input-text--textarea" id="comment" rows="7" cols="5" name="text" placeholder="Расскажите обо всех повадках кота"></textarea>
             </div>
-          </fieldset>
+          </div>
 
-          <fieldset class="form__fieldset">
-            <legend class="form__legend form__legend--checkbox">Дополнительно</legend>
+          <fieldset class="form__group">
+            <legend class="form__group-title form__group-title--checkbox">Дополнительно</legend>
 
             <div class="form__wrapper">
               <div class="form__inner form__inner--checkbox">
