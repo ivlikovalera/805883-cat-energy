@@ -28,10 +28,11 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: 95px;
+    top: 97px;
     left: 40px;
     width: 570px;
     background-color: $color-main;
+    z-index: 100;
   }
 }
 

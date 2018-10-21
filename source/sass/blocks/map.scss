@@ -17,4 +17,11 @@
     height: 106px;
     width: 113px;
   }
+
+  @media (min-width: $desktop-width) {
+    top: 180px;
+    left: 960px;
+    height: 106px;
+    width: 113px;
+  }
 }

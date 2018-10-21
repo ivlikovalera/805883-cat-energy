@@ -44,6 +44,10 @@
       border-bottom: 1px dotted lightgrey;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 5px;
+  }
 }
 
 .slider__text-inner {
@@ -84,7 +88,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 105px;
+    margin-top: 100px;
     //такое число только до замены картинки на адаптивную//
   }
 }

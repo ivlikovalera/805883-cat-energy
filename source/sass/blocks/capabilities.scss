@@ -47,6 +47,14 @@
     top: 92px;
     left: 445px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    top: 47px;
+    left: 52px;
+  }
 }
 
 .capabilities__subtitle {
@@ -103,7 +111,7 @@
 
   @media (min-width: $desktop-width) {
     padding-right: 56px;
-    padding-bottom: 31px;
+    padding-bottom: 29px;
   }
 }
 

@@ -54,6 +54,10 @@
   position: relative;
   padding-top: 10px;
   padding-bottom: 16px;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+  }
 }
 
 .effect__text {
@@ -105,7 +109,7 @@
     top: 32px;
     left: 116px;
     counter-increment: section;
-    content: " " counter(section) " ";
+    content: " "counter(section) " ";
     font-family: $font-family-main;
     font-size: 281px;
     line-height: 281px;
