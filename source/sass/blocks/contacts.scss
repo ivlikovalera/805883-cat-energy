@@ -3,7 +3,7 @@
   width: auto;
   margin: 0 auto;
   padding: 0;
-  padding-bottom: 25px;
+  padding-bottom: 24px;
 
   &--grey {
     display: flex;
@@ -48,7 +48,7 @@
   text-transform: uppercase;
   padding-left: 20px;
   padding-right: 18px;
-  padding-top: 27px;
+  padding-top: 29px;
   margin: 0;
 
   @media (min-width: $tablet-width) {
@@ -76,7 +76,7 @@
   text-align: left;
   color: $text-color-second;
   padding-right: 20px;
-  padding-top: 27px;
+  padding-top: 29px;
   margin: 0;
 
   @media (min-width: $tablet-width) {
