@@ -2,7 +2,7 @@
   padding-left: 20px;
   padding-right: 20px;
   margin-top: 0;
-  margin-bottom: 19px;
+  margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
     width: 625px;
@@ -29,7 +29,7 @@
   text-align: left;
   color: $text-color-main;
   margin: 0;
-  padding-bottom: 31px;
+  padding-bottom: 25px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -40,7 +40,7 @@
 .effect__list {
   list-style: none;
   margin: 0;
-  padding-left: 80px;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -50,17 +50,35 @@
   }
 }
 
+.effect__marker {
+  height: 60px;
+  width: 60px;
+  background-color: $marker-color;
+  background-position: center;
+
+  &--leaf {
+    background-image: url("../../img/advantage-leaf@1x.png");
+  }
+
+  &--powder {
+    background-image: url("../../img/advantage-powder@1x.png");
+  }
+
+  &--eat {
+    background-image: url("../../img/advantage-dining@1x.png");
+  }
+
+  &--time {
+    background-image: url("../../img/advantage-clock@1x.png");
+  }
+}
+
 .effect__list-item {
-  font-family: $font-family-second;
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 400;
-  font-style: normal;
-  font-stretch: normal;
-  letter-spacing: normal;
-  text-align: left;
-  color: $text-color-second;
-  padding-bottom: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  padding-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     width: 245px;
@@ -73,4 +91,19 @@
   @media (min-width: $desktop-width) {
     padding-top: 183px;
   }
+}
+
+.effect__text {
+  font-family: $font-family-second;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: $text-color-second;
+  margin: 0;
+  margin-left: 20px;
+  width: 195px;
 }
