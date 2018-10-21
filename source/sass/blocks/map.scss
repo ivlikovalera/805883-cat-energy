@@ -10,4 +10,11 @@
   z-index: 3;
   height: 53px;
   width: 55px;
+
+  @media (min-width: $tablet-width) {
+    top: 180px;
+    left: 350px;
+    height: 106px;
+    width: 113px;
+  }
 }

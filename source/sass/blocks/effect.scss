@@ -5,9 +5,9 @@
   margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
-    width: 625px;
+    width: 628px;
     margin-top: 45px;
-    margin-bottom: 42px;
+    margin-bottom: 40px;
     margin-left: 30px;
     padding: 0;
   }
@@ -37,6 +37,7 @@
 }
 
 .effect__list {
+  counter-reset: section;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -53,18 +54,6 @@
   position: relative;
   padding-top: 10px;
   padding-bottom: 16px;
-
-  @media (min-width: $tablet-width) {
-    width: 245px;
-    font-size: 16px;
-    line-height: 24px;
-    padding-top: 185px;
-    padding-bottom: 59px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 183px;
-  }
 }
 
 .effect__text {
@@ -79,6 +68,19 @@
   color: $text-color-second;
   margin: 0;
   padding-left: 80px;
+
+  @media (min-width: $tablet-width) {
+    width: 245px;
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 174px;
+    padding-bottom: 45px;
+    padding-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 183px;
+  }
 }
 
 .effect__text::before {
@@ -89,4 +91,26 @@
   height: 60px;
   width: 60px;
   background-color: $marker-color;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+    top: 70px;
+  }
+}
+
+.effect__text::after {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 32px;
+    left: 116px;
+    counter-increment: section;
+    content: " " counter(section) " ";
+    font-family: $font-family-main;
+    font-size: 281px;
+    line-height: 281px;
+    color: #f2f2f2;
+    text-align: left;
+    z-index: -1;
+  }
 }
