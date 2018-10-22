@@ -7,6 +7,7 @@
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
   }
 
@@ -27,8 +28,10 @@
     width: 324px;
     border: none;
     background-color: $color-second;
-    margin-bottom: 58px;
+    margin: 0;
+    margin-bottom: 51px;
     padding-bottom: 0;
+    padding-top: 79px; //временно изображаю высоту адаптивной картинки//
   }
 
   @media (min-width: $desktop-width) {
@@ -77,7 +80,7 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
-    padding: 10px 93px 10px 92px;
+    padding: 10px 93px 10px 93px;
     margin-bottom: 39px;
   }
 

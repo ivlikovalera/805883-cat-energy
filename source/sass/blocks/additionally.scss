@@ -16,17 +16,7 @@
   background-image: linear-gradient(to top, transparent 0, transparent 13px, #68b738 13px, #68b738 16px, transparent 16px, transparent 100%);
 
   @media (min-width: $tablet-width) {
-    width: 633px;
-    margin: 0 auto;
-    font-size: 36px;
-    line-height: 36px;
-    border: none;
-    padding-bottom: 75px;
-    padding-top: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1220px;
+    margin-top: 13px;
   }
 }
 
@@ -42,6 +32,21 @@
   padding-top: 28px;
   padding-right: 22px;
   background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    border: none;
+    padding-bottom: 50px;
+    padding-right: 35px;
+    padding-left: 38px;
+    padding-top: 0;
+    margin-left: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
 }
 
 .additionally__wrapper {
@@ -112,6 +117,10 @@
     font-size: 16px;
     line-height: 20px;
     margin-left: 52px;
+
+    &--left-second {
+      padding-right: 10px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -144,6 +153,7 @@
     flex-direction: column;
     align-items: center;
     border: 1px solid $separator-menu;
+    padding-top: 16px;
     padding-bottom: 0;
   }
 
@@ -171,6 +181,10 @@
 
 .additionally__list {
   margin-top: 27px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 76px;
+  }
 }
 
 .additionally__button {
@@ -179,7 +193,7 @@
     line-height: 20px;
     box-sizing: border-box;
     padding: 10px 287px 10px 285px;
-    margin-bottom: 40px;
+    margin-bottom: 28px;
   }
 
   @media (min-width: $desktop-width) {
@@ -201,8 +215,8 @@
     width: 708px;
     height: 200px;
     margin: 0 auto;
-    margin-top: 69px;
-    margin-bottom: 76px;
+    margin-top: 67px;
+    margin-bottom: 79px;
   }
 
   @media (min-width: $desktop-width) {
@@ -226,7 +240,7 @@
 
   @media (min-width: $tablet-width) {
     text-align: left;
-    padding: 75px 125px 69px 420px;
+    padding: 73px 120px 20px 422px;
   }
 
   @media (min-width: $desktop-width) {
