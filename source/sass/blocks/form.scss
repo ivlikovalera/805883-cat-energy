@@ -3,7 +3,7 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    width: 628px;
+    width: 631px;
   }
 
   @media (min-width: $desktop-width) {
@@ -48,12 +48,32 @@
   }
 
   @media (min-width: $tablet-width) {
+    padding-left: 2px;
+    margin-right: 0;
+
     &--radio {
-      padding-bottom: 25px;
-      padding-top: 25px;
-      padding-left: 28px;
-      margin-top: 56px;
-      margin-bottom: 66px;
+      padding-top: 20px;
+      margin-top: 48px;
+      margin-left: 4px;
+      margin-bottom: 67px;
+      padding-bottom: 15px;
+    }
+
+    &--owner {
+      margin-right: -68px;
+      margin-left: -70px;
+      margin-bottom: 38px;
+    }
+
+    &--comment {
+      margin-right: -68px;
+      margin-left: -70px;
+      margin-bottom: 53px;
+    }
+
+    &--more {
+      margin-right: -68px;
+      margin-left: -70px;
     }
   }
 }
@@ -70,6 +90,29 @@
 
   &--extra {
     padding-top: 28px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--radio {
+      padding-bottom: 15px;
+    }
+
+    &--contact {
+      padding-top: 72px;
+      margin-left: 70px;
+      margin-right: 65px;
+    }
+
+    &--extra {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-left: 58px;
+      margin-top: 30px;
+      padding-top: 25px;
+      margin-right: 25px;
+    }
   }
 }
 
@@ -115,14 +158,29 @@
   @media (min-width: $tablet-width) {
     width: auto;
     padding: 0;
+    padding-top: 2px;
+    padding-bottom: 2px;
 
-    &--comment {
-      padding-bottom: 50px;
+    &--radio {
+      padding-left: 83px;
+      padding-top: 13px;
+      padding-bottom: 13px;
+      margin-bottom: 7px;
+    }
+
+    &--textarea {
+      margin-top: 74px;
+      padding-left: 70px;
+      padding-right: 67px;
     }
 
     &--more {
-      width: 225px;
       padding-bottom: 32px;
+    }
+
+    &--checkbox {
+      width: 246px;
+      padding-bottom: 28px;
     }
   }
 
@@ -157,10 +215,17 @@
     margin-left: 0;
   }
 
-
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
+
+    &--contact {
+      margin-right: 13px;
+    }
+
+    &--email {
+      margin-right: 20px;
+    }
   }
 }
 
@@ -192,11 +257,14 @@
     line-height: 20px;
     padding-left: 20px;
     padding-top: 16px;
-    padding-bottom: 16px;
-    margin-left: 16px;
+    padding-bottom: 12px;
+    margin-left: auto;
 
     &--textarea {
       margin-left: 0;
+      padding-left: 18px;
+      padding-top: 14px;
+      padding-bottom: 19px;
     }
   }
 }
@@ -215,42 +283,10 @@
   margin-right: 16px;
 }
 
-.form__wrapper {
-  @media (min-width: $tablet-width) {
-    width: 500px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1220px;
-  }
-}
-
 .form__container {
-  @media (min-width: $tablet-width) {
-    &--last {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      width: 538px;
-      margin-bottom: 62px;
-    }
-  }
-
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
-
-    &--first {
-      align-items: center;
-    }
-
-    &--last {
-      width: 835px;
-    }
   }
 }
 
@@ -262,8 +298,15 @@
   display: block;
   width: 30px;
   height: 30px;
-  border: 1px solid #ededed;
+  border: 1px solid #cdcdcd;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+    left: 22px;
+    top: 3px;
+  }
 }
 
 .form__choice::after {
@@ -278,6 +321,15 @@
   background-color: #68b738;
 }
 
+.form__extra {
+  @media (min-width: $tablet-width) {
+    padding-left: 70px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0;
+  }
+}
+
 .form__extra::before {
   content: "";
   position: absolute;
@@ -288,6 +340,13 @@
   width: 30px;
   height: 30px;
   border: 1px solid #cdcdcd;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+    top: 2px;
+    left: 12px;
+  }
 }
 
 .form__input-checkbox:checked + .form__extra:active::before {
@@ -304,18 +363,9 @@
   background-image: linear-gradient(to bottom, transparent 0, transparent 13px, #68b738 13px, #68b738 16px, transparent 16px, transparent 100%);
 
   @media (min-width: $tablet-width) {
-    font-size: 36px;
-    line-height: 36px;
-    padding-left: 0;
-    padding-bottom: 70px;
-
-    &--checkbox {
-      padding-bottom: 53px;
-    }
-
-    &--textarea {
-      padding-top: 56px;
-    }
+    margin: 0;
+    min-height: 46px;
+    background-image: linear-gradient(to top, transparent 0, transparent 13px, #68b738 13px, #68b738 16px, transparent 16px, transparent 100%);
   }
 }
 
@@ -341,6 +391,24 @@
     width: 145px;
     padding-right: 18px;
   }
+
+  @media (min-width: $tablet-width) {
+    width: 515px;
+    font-size: 36px;
+    line-height: 36px;
+    padding-left: 40px;
+    margin-left: 28px;
+    padding-right: 38px;
+    padding-top: 10px;
+
+    &--comment {
+      width: 180px;
+    }
+
+    &--more {
+      width: 215px;
+    }
+  }
 }
 
 .form__button {
@@ -351,8 +419,9 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     margin: 0;
-    margin-left: 5px;
+    margin-left: 2px;
     padding: 16px 65px 16px 65px;
+    margin-bottom: 2px;
   }
 
   @media (min-width: $desktop-width) {
@@ -375,5 +444,17 @@
     font-size: 16px;
     text-align: left;
     margin: 0;
+    padding-bottom: 5px;
+  }
+}
+
+.form__inner {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 27px;
+    margin-bottom: 70px;
+    margin-right: 105px;
   }
 }
