@@ -76,6 +76,22 @@
       margin-left: -70px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    &--present {
+      padding-left: 0;
+      margin-top: 0;
+    }
+
+    &--radio {
+      margin-top: 38px;
+      margin-bottom: 0;
+    }
+
+    &--comment {
+      margin-right: -80px;
+    }
+  }
 }
 
 .form__list {
@@ -112,6 +128,19 @@
       margin-top: 30px;
       padding-top: 25px;
       margin-right: 25px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--contact {
+      display: flex;
+      justify-content: space-between;
+      padding-right: 4px;
+    }
+
+    &--extra {
+      width: 1100px;
+      flex-wrap: nowrap;
     }
   }
 }
@@ -189,9 +218,11 @@
 
     &--radio {
       padding-bottom: 13px;
+      padding-left: 88px;
     }
 
-    &--comment {
+    &--textarea {
+      display: flex;
       width: 1220px;
     }
 
@@ -224,6 +255,12 @@
     }
 
     &--email {
+      margin-right: 20px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--weight {
       margin-right: 20px;
     }
   }
@@ -267,6 +304,12 @@
       padding-bottom: 19px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    &--textarea {
+      flex-grow: 2;
+    }
+  }
 }
 
 .form__input-text::placeholder {
@@ -286,7 +329,9 @@
 .form__container {
   @media (min-width: $desktop-width) {
     display: flex;
+    align-items: flex-start;
     justify-content: space-between;
+    margin-bottom: 33px;
   }
 }
 
@@ -306,6 +351,10 @@
     height: 40px;
     left: 22px;
     top: 3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 25px;
   }
 }
 
@@ -425,7 +474,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 15px 190px 15px 190px;
+    padding: 16px 208px 16px 206px;
   }
 }
 
