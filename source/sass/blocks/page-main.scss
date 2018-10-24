@@ -3,6 +3,10 @@
 
   @media (min-width: $desktop-width) {
     margin-top: 80px;
+
+    &--form {
+      margin-top: 0;
+    }
   }
 }
 
@@ -33,6 +37,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
     margin-top: -23px;
   }
 }
