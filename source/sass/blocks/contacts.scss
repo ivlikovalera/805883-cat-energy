@@ -19,7 +19,6 @@
       background-color: $color-second;
       background-size: contain;
       max-width: 768px;
-      margin: 0;
     }
   }
 
@@ -80,7 +79,7 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     padding-top: 33px;
-    padding-left: 38px;
+    padding-left: 39px;
     padding-right: 70px;
     text-align: right;
   }

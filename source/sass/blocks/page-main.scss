@@ -39,10 +39,4 @@
 
 .page-main__wrapper {
   width: auto;
-
-  @media (min-width: $tablet-width) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
 }
