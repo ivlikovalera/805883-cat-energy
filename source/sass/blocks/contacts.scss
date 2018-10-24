@@ -1,15 +1,11 @@
 .contacts {
   display: flex;
-  width: auto;
-  margin: 0 auto;
   padding: 0;
   padding-bottom: 24px;
 
   &--grey {
     display: flex;
     background-color: $color-second;
-    width: auto;
-    margin: 0 auto;
     padding-bottom: 26px;
   }
 
