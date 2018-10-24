@@ -29,13 +29,11 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-left: 2px;
-    margin-right: 0;
+    width: auto;
 
     &--radio {
       padding-top: 20px;
       margin-top: 48px;
-      margin-left: 4px;
       margin-bottom: 67px;
       padding-bottom: 15px;
     }
@@ -81,14 +79,16 @@
   }
 
   @media (min-width: $tablet-width) {
+    width: 630px;
+    margin: 0 auto;
+
     &--radio {
+      width: 622px;
       padding-bottom: 15px;
     }
 
     &--contact {
       padding-top: 72px;
-      margin-left: 70px;
-      margin-right: 65px;
     }
 
     &--extra {
@@ -96,10 +96,8 @@
       align-items: flex-start;
       justify-content: space-between;
       flex-wrap: wrap;
-      margin-left: 58px;
       margin-top: 30px;
       padding-top: 25px;
-      margin-right: 25px;
     }
   }
 
@@ -164,7 +162,7 @@
     padding-bottom: 2px;
 
     &--radio {
-      padding-left: 83px;
+      padding-left: 89px;
       padding-top: 13px;
       padding-bottom: 13px;
       margin-bottom: 7px;
@@ -229,6 +227,10 @@
 
     &--email {
       margin-right: 20px;
+    }
+
+    &--weight {
+      margin-right: 19px;
     }
   }
 
@@ -321,7 +323,7 @@
   @media (min-width: $tablet-width) {
     width: 40px;
     height: 40px;
-    left: 22px;
+    left: 28px;
     top: 3px;
   }
 
