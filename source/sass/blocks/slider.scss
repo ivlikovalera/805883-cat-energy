@@ -35,13 +35,29 @@
 
     &--before {
       line-height: 26px;
-      border-bottom: 1px dotted lightgrey;
+      border-bottom: 1px dotted #bebebe;
+
+      &:hover {
+        border-bottom-style: solid;
+      }
+
+      &:active {
+        border: none;
+      }
     }
 
     &--after {
       padding-right: 3px;
       line-height: 26px;
-      border-bottom: 1px dotted lightgrey;
+      border-bottom: 1px dotted #bebebe;
+
+      &:hover {
+        border-bottom-style: solid;
+      }
+
+      &:active {
+        border: none;
+      }
     }
   }
 

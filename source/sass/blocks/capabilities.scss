@@ -122,6 +122,10 @@
   padding-bottom: 21px;
   border-top: 1px solid $line-on-identical-color;
 
+  &:active {
+    color: rgba(17, 17, 17, 0.3);
+  }
+
   @media (min-width: $tablet-width) {
     width: 170px;
     padding-top: 2px;
