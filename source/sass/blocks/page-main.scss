@@ -1,6 +1,13 @@
 .page-main {
   width: auto;
-  margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 80px;
+
+    &--form {
+      margin-top: 0;
+    }
+  }
 }
 
 .page-main__intro {
@@ -15,33 +22,27 @@
   text-transform: uppercase;
   padding-right: 20px;
   padding-left: 20px;
-  padding-bottom: 15px;
+  padding-bottom: 5px;
   margin: 0;
+  margin-top: -3px;
 
   @media (min-width: $tablet-width) {
     width: 628px;
-    margin: 0 auto;
+    margin-left: 70px;
+    margin-top: -20px;
     font-size: 20px;
     line-height: 30px;
     padding: 0;
-    padding-bottom: 45px;
+    padding-bottom: 28px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1220px;
+    margin: 0 auto;
+    margin-top: -23px;
   }
 }
 
 .page-main__wrapper {
-  @media (min-width: $tablet-width) {
-    width: 636px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1220px;
-  }
+  width: auto;
 }

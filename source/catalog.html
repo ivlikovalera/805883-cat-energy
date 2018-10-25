@@ -6,6 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/style.css">
+<style>
+  HTML {
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-image: url(back/cat-energy-catalog-mobile-all.png);
+  }
+  @media (min-width: 768px) {
+    HTML {
+      background-image: url(back/cat-energy-catalog-tablet.jpg);
+    }
+  }
+  @media (min-width: 1300px) {
+    HTML {
+      background-image: url(back/cat-energy-catalog-desktop.jpg);
+    }
+  }
+</style>
+<link href="pixel-glass/styles.css" rel="stylesheet">
+<script src="pixel-glass/script.js"></script>
   </head>
 
   <body class="page">
@@ -276,12 +295,16 @@
 
           <p class="all-in-catalog__text">На самом деле вкусов гораздо больше!</p>
 
-          <a class="all-in-catalog__button button button--grey" href="#.html">Показать все</a>
+          <a class="all-in-catalog__button button button--grey" href="allproducts.html">Показать все</a>
         </div>
       </section>
 
       <section class="additionally">
-        <h2 class="additionally__title">Дополнительные товары</h2>
+        <div class="container">
+          <h2 class="additionally__title">
+            <span class="additionally__title-span">Дополнительные товары</span>
+          </h2>
+        </div>
         <div class="additionally__box">
           <div class="additionally__list">
             <div class="additionally__item">
@@ -303,7 +326,7 @@
                 <h3 class="additionally__subtitle">Питьевая вода</h3>
 
                 <div class="additionally__inner additionally-info">
-                  <p class="additionally__text">5 литров</p>
+                  <p class="additionally__text additionally__text--left-second"> 5 литров</p>
 
                   <p class="additionally__text">50 Р.</p>
                 </div>
@@ -362,6 +385,10 @@
 
       <div class="page-footer__map map">
         <img class="map__image" src="img/bg-map-mobile@1x.png" width="320" height="362" alt="Карта">
+
+        <div class="map__pin">
+            <img class="map__pin-image" src="img/map-pin.png" width="55" height="53" alt="Маркер">
+          </div>
       </div>
 
         <div class="container container--footer">

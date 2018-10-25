@@ -3,7 +3,7 @@
   background-repeat: no-repeat;
   background-size: 320px 305px;
   color: $text-color-on_back;
-  margin-bottom: 23px;
+  margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
     width: 708px;
@@ -24,7 +24,7 @@
 
 .promo__picture {
   margin-left: 20px;
-  margin-bottom: 2px;
+  margin-bottom: 0;
 
   @media (min-width: $tablet-width) {
     margin-left: 230px;
@@ -47,8 +47,8 @@
   text-align: center;
   color: $text-color-on_back;
   margin: 0;
-  padding-top: 29px;
-  padding-bottom: 23px;
+  padding-top: 27px;
+  padding-bottom: 25px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -79,7 +79,7 @@
   text-transform: uppercase;
   margin: 0;
   padding-top: 0;
-  padding-bottom: 27px;
+  padding-bottom: 28px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -109,7 +109,7 @@
     line-height: 20px;
     padding: 16px 27px 16px 27px;
     margin-left: -425px;
-    margin-top: -445px;
+    margin-top: -440px;
     order: 2;
   }
 

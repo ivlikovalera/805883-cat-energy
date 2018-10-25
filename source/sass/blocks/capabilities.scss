@@ -16,8 +16,9 @@
 }
 
 .capabilities__item {
+  position: relative;
   background-color: $color-second;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 29px;
@@ -29,6 +30,33 @@
   }
 }
 
+.capabilities__text::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 23px;
+  left: 22px;
+  background-color: $marker-color;
+  border-radius: 25px;
+
+  @media (min-width: $tablet-width) {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    top: 92px;
+    left: 445px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    top: 47px;
+    left: 52px;
+  }
+}
+
 .capabilities__subtitle {
   font-family: $font-family-main;
   color: $text-color-main;
@@ -37,15 +65,15 @@
   line-height: 37px;
   text-transform: uppercase;
   text-align: left;
-  padding-top: 28px;
-  padding-left: 92px;
+  padding-top: 29px;
+  padding-left: 91px;
   padding-right: 10px;
-  padding-bottom: 31px;
+  padding-bottom: 30px;
   margin: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
-    padding-top: 78px;
+    padding-top: 76px;
     padding-left: 53px;
     padding-bottom: 25px;
   }
@@ -73,30 +101,34 @@
     font-size: 16px;
     line-height: 24px;
     padding-left: 52px;
-    padding-right: 260px;
+    padding-right: 275px;
     padding-bottom: 55px;
 
     &--short {
-      padding-right: 295px;
+      padding-right: 315px;
     }
   }
 
   @media (min-width: $desktop-width) {
     padding-right: 56px;
-    padding-bottom: 31px;
+    padding-bottom: 29px;
   }
 }
 
 .capabilities__inner {
   width: 240px;
   margin: 0 auto;
-  padding-top: 18px;
-  padding-bottom: 22px;
+  padding-top: 19px;
+  padding-bottom: 21px;
   border-top: 1px solid $line-on-identical-color;
+
+  &:active {
+    color: rgba(17, 17, 17, 0.3);
+  }
 
   @media (min-width: $tablet-width) {
     width: 170px;
-    padding-top: 0;
+    padding-top: 2px;
     padding-bottom: 62px;
     border: none;
     margin-left: 53px;

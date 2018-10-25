@@ -4,7 +4,7 @@
   width: auto;
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 80px;
+    margin-bottom: 0;
 
     &--index {
       background-image:
@@ -23,7 +23,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    width: 708px;
+    width: 706px;
     margin: 0 auto;
     margin-top: 18px;
   }
@@ -90,7 +90,7 @@
     margin: 0;
     padding-left: 0;
     padding-top: 51px;
-    padding-bottom: 50px;
+    padding-bottom: 74px;
   }
 
   @media (min-width: $desktop-width) {

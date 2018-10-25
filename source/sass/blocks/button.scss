@@ -14,30 +14,30 @@
   padding: 10px 108px 10px 111px;
   margin: 0 auto;
 
+  &:hover,
+  &:focus {
+    background-color: $button-color-main-action;
+  }
+
+  &:active {
+    color: $text-color-on_back-down;
+  }
+
   &--grey {
     background-color: $button-color-second;
     color: $text-color-second;
     box-sizing: border-box;
     padding: 10px 94px 10px 97px;
+
+    &:hover,
+    &:focus {
+      background-color: $button-color-second-action;
+      color: $text-color-second;
+    }
+
+    &:active {
+      background-color: $button-color-second-action;
+      color: rgba(68, 68, 68, 0.3);
+    }
   }
-}
-
-.button:hover,
-.button:focus {
-  background-color: $button-color-main-action;
-}
-
-.button--grey:hover,
-.button--grey:focus {
-  background-color: $button-color-second-action;
-  color: $text-color-second;
-}
-
-.button:active {
-  color: $text-color-on_back-down;
-}
-
-.button--grey:active {
-  background-color: $button-color-second-action;
-  color: rgba(68, 68, 68, 0.3);
 }
