@@ -224,12 +224,14 @@
   }
 
   @media (min-width: $tablet-width) {
+    width: 708px;
     min-height: 200px;
+    margin: 0 auto;
     margin-top: 67px;
     margin-bottom: 79px;
     background-image: url("../../img/icon-gift.svg"), url("../../img/gift-photo-tablet@1x.jpg");
     background-size: 55px 60px, 708px 200px;
-    background-position: 27% 50%, 100% 100%;
+    background-position: 14% 47%, 100% 100%;
 
     @media (min-resolution: $retina-dpi),
       (min-resolution: $retina-dppx) {
