@@ -72,18 +72,72 @@
   color: $text-color-second;
   margin: 0;
   padding-left: 80px;
+}
 
-  @media (min-width: $tablet-width) {
-    width: 245px;
-    font-size: 16px;
-    line-height: 24px;
-    padding-top: 174px;
-    padding-bottom: 45px;
-    padding-left: 0;
+@media (min-width: $tablet-width) {
+  width: 245px;
+  font-size: 16px;
+  line-height: 24px;
+  padding-top: 174px;
+  padding-bottom: 45px;
+  padding-left: 0;
+}
+
+@media (min-width: $desktop-width) {
+  padding-top: 183px;
+}
+
+.effect__text--nature::before {
+  width: 26px;
+  height: 29px;
+  background-image: url("../../img/advantage-leaf@1x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../../img/advantage-leaf@2x.png");
+    background-size: 50px 50px;
   }
+}
 
-  @media (min-width: $desktop-width) {
-    padding-top: 183px;
+.effect__text--powder::before {
+  width: 26px;
+  height: 29px;
+  background-image: url("../../img/advantage-powder@1x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../../img/advantage-powder@2x.png");
+    background-size: 50px 50px;
+  }
+}
+
+.effect__text--eat::before {
+  width: 26px;
+  height: 29px;
+  background-image: url("../../img/advantage-dining@1x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+    background-image: url("../../img/advantage-dining@2x.png");
+    background-size: 50px 50px;
+  }
+}
+
+.effect__text--time::before {
+  width: 26px;
+  height: 29px;
+  background-image: url("../../img/advantage-clock@1x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+    background-image: url("../../img/advantage-clock@2x.png");
+    background-size: 50px 50px;
   }
 }
 
