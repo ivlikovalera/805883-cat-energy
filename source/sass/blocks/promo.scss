@@ -5,19 +5,23 @@
   color: $text-color-on_back;
   margin-bottom: 22px;
 
+  @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+    background-image: url("../../img/index-background-mobile@2x.jpg");
+    background-size: 320px 305px;
+  }
+
   @media (min-width: $tablet-width) {
     width: 708px;
     margin: 0 auto;
     background-image: none;
     color: $text-color-main;
     margin-bottom: 10px;
-    min-height: 850px; //временно для сетки//
 
     @media (min-width: $desktop-width) {
       width: 1220px;
       margin: 0 auto;
       margin-top: 40px;
-      min-height: 535px; //временно для сетки//
     }
   }
 }
