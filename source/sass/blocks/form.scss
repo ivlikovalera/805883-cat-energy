@@ -535,10 +535,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 57px;
+    margin-left: 0;
+    padding-left: 37px;
 
     &--comment {
-      margin-left: 59px;
+      margin-left: 2px;
       margin-top: 2px;
     }
   }
