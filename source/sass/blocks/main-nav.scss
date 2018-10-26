@@ -94,6 +94,8 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    padding-top: 25px;
+    padding-bottom: 20px;
     width: 151px;
     border: none;
     font-weight: 400;
@@ -126,12 +128,13 @@
 
 .main-nav__toggle {
   position: absolute;
-  top: 21px;
+  top: 22px;
   right: 22px;
   display: block;
   width: 20px;
   height: 20px;
-  background-color: grey;
+  background-image: url("../../img/icon-close.svg");
+  background-color: $color-main;
   cursor: pointer;
   border: none;
 

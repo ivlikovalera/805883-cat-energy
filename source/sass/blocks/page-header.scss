@@ -41,21 +41,24 @@
 .page-header__logo {
   display: inline-block;
   width: 191px;
-  height: 39px;
+  height: 38px;
   margin: 0;
   padding: 0;
   padding-left: 20px;
-  padding-top: 13px;
+  padding-top: 14px;
   text-align: left;
 
   @media (min-width: $tablet-width) {
+    padding-top: 0;
     padding-left: 0;
-    height: 59px;
+    width: 173px;
+    height: 58px;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 0;
     height: 60px;
+    width: 202px;
   }
 }
 
@@ -89,13 +92,13 @@
     border-top: none;
     margin: 0;
     padding-left: 0;
-    padding-top: 51px;
+    padding-top: 52px;
     padding-bottom: 74px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 66px;
-    padding-bottom: 80px;
+    padding-top: 70px;
+    padding-bottom: 20px;
   }
 }
 

@@ -16,7 +16,7 @@
   background-image: linear-gradient(to top, transparent 0, transparent 13px, #68b738 13px, #68b738 16px, transparent 16px, transparent 100%);
 
   @media (min-width: $tablet-width) {
-    margin-top: 13px;
+    margin-top: 8px;
     margin-right: 0;
   }
 }
@@ -209,26 +209,49 @@
 }
 
 .additionally__bonus {
-  width: 280px;
-  height: 289px;
   background-color: lightgreen;
-  background-image: url("../img/gift-photo-mobile@1x.jpg");
-  background-repeat: no-repeat;
+  background-image: url("../../img/icon-gift.svg"), url("../../img/gift-photo-mobile@1x.jpg");
+  background-size: 56px 61px, 100% 289px;
+  background-repeat: no-repeat, no-repeat;
+  background-position: 50% 27%;
   margin-top: 39px;
   margin-bottom: 35px;
 
+  @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+    background-image: url("../../img/icon-gift.svg"), url("../../img/gift-photo-mobile@2x.jpg");
+    background-size: 56px 61px, 100% 289px;
+  }
+
   @media (min-width: $tablet-width) {
-    width: 708px;
-    height: 200px;
-    margin: 0 auto;
+    min-height: 200px;
     margin-top: 67px;
     margin-bottom: 79px;
+    background-image: url("../../img/icon-gift.svg"), url("../../img/gift-photo-tablet@1x.jpg");
+    background-size: 55px 60px, 708px 200px;
+    background-position: 27% 50%, 100% 100%;
+
+    @media (min-resolution: $retina-dpi),
+      (min-resolution: $retina-dppx) {
+      background-image: url("../../img/icon-gift.svg"), url("../../img/gift-photo-tablet@2x.jpg");
+      background-size: 55px 60px, 708px 200px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     width: 245px;
     height: 289px;
     margin: 0;
+    background-image: url("../../img/icon-gift.svg"), url("../../img/gift-photo-desktop@1x.jpg");
+    background-size: 55px 60px, 100% 289px;
+    background-position: 50% 27%;
+
+    @media (min-resolution: $retina-dpi),
+      (min-resolution: $retina-dppx) {
+      background-image: url("../../img/icon-gift.svg"), url("../../img/gift-photo-desktop@2x.jpg");
+      background-size: 55px 60px, 100% 289px;
+      background-position: 50% 27%;
+    }
   }
 }
 
