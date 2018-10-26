@@ -115,6 +115,9 @@
   margin-left: 20px;
 
   @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 369px;
+    left: 31px;
     width: 245px;
     height: 52px;
     font-size: 20px;
@@ -123,4 +126,9 @@
     margin-left: 88px;
     order: 2;
   }
+
+  @media (min-width: $desktop-width) {
+    top: 455px;
+  }
 }
+
