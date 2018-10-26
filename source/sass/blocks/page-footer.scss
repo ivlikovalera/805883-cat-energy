@@ -1,4 +1,5 @@
 .page-footer {
+  position: relative;
   width: auto;
 
   @media (min-width: $tablet-width) {
@@ -6,7 +7,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    position: relative;
     border: 1px solid transparent;
   }
 }
