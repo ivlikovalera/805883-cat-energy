@@ -5,21 +5,23 @@
   @media (min-width: $tablet-width) {
     width: auto;
   }
+
+  @media (min-width: $desktop-width) {
+    border: 1px solid transparent;
+  }
 }
 
 .page-footer__map {
-  width: 320px;
-  height: 362px;
-  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+  max-height: 362px;
 
   @media (min-width: $tablet-width) {
-    width: auto;
-    height: 395px;
-    background-color: beige; //временно для демонстрации места под карту//
+    max-height: 395px;
   }
 
   @media (min-width: $desktop-width) {
-    height: 400px;
+    max-height: 400px;
   }
 }
 
@@ -51,7 +53,7 @@
 .page-footer__logo-image {
   margin-left: 96px;
   margin-right: 96px;
-  margin-top: 40px;
+  margin-top: 38px;
   margin-bottom: 26px;
 
   @media (min-width: $tablet-width) {

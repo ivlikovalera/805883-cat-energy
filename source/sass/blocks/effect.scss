@@ -6,7 +6,7 @@
 
   @media (min-width: $tablet-width) {
     width: 628px;
-    margin-top: 45px;
+    margin-top: 14px;
     margin-bottom: 40px;
     margin-left: 30px;
     padding: 0;
@@ -55,6 +55,10 @@
   padding-top: 10px;
   padding-bottom: 16px;
 
+  @media (min-width: $tablet-width) {
+    max-width: 250px;
+  }
+
   @media (min-width: $desktop-width) {
     padding-top: 0;
   }
@@ -83,7 +87,61 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 183px;
+    padding-top: 185px;
+  }
+}
+
+.effect__text--nature::before {
+  width: 26px;
+  height: 29px;
+  background-image: url("../../img/advantage-leaf@1x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../../img/advantage-leaf@2x.png");
+    background-size: 50px 50px;
+  }
+}
+
+.effect__text--powder::before {
+  width: 26px;
+  height: 29px;
+  background-image: url("../../img/advantage-powder@1x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../../img/advantage-powder@2x.png");
+    background-size: 50px 50px;
+  }
+}
+
+.effect__text--eat::before {
+  width: 26px;
+  height: 29px;
+  background-image: url("../../img/advantage-dining@1x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+    background-image: url("../../img/advantage-dining@2x.png");
+    background-size: 50px 50px;
+  }
+}
+
+.effect__text--time::before {
+  width: 26px;
+  height: 29px;
+  background-image: url("../../img/advantage-clock@1x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+    background-image: url("../../img/advantage-clock@2x.png");
+    background-size: 50px 50px;
   }
 }
 
@@ -100,6 +158,11 @@
     width: 80px;
     height: 80px;
     top: 70px;
+    left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 72px;
   }
 }
 

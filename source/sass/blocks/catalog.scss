@@ -9,11 +9,12 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    margin-top: 8px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1220px;
-    margin-top: -84px;
+    margin-top: -24px;
     margin-bottom: 20px;
   }
 }
@@ -29,16 +30,16 @@
   @media (min-width: $tablet-width) {
     width: 324px;
     border: none;
-    background-color: $color-second;
+    background-image: linear-gradient(#ffffff 0%, #ffffff 81px, #f2f2f2 81px, #f2f2f2 100%);
     margin: 0;
-    margin-bottom: 51px;
+    margin-bottom: 58px;
     padding-bottom: 0;
-    padding-top: 79px; //временно изображаю высоту адаптивной картинки для планшета и десктопа//
   }
 
   @media (min-width: $desktop-width) {
     width: 245px;
-    margin-bottom: 52px;
+    margin-top: 10px;
+    margin-bottom: 53px;
   }
 }
 
@@ -73,7 +74,6 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    min-width: 161px;
     margin: 0 auto;
   }
 }
@@ -89,5 +89,21 @@
   @media (min-width: $desktop-width) {
     padding: 10px 54px 10px 54px;
     margin-bottom: 40px;
+  }
+}
+
+.catalog-info__inner {
+  width: 140px;
+  height: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    height: 208px;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
   }
 }

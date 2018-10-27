@@ -3,11 +3,31 @@
 
   @media (min-width: $tablet-width) {
     background-color: $color-main;
+    background-image: none;
     border: 1px solid $color-second;
+    align-self: flex-end;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 85px;
+    max-height: 432px;
+  }
+}
+
+.all-in-catalog::before {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    background-color: $color-main;
+    border-bottom: 1px solid $color-second;
+    width: 326px;
+    height: 84px;
+    z-index: 200;
+    top: -3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 247px;
   }
 }
 
@@ -28,7 +48,7 @@
   @media (min-width: $tablet-width) {
     width: 135px;
     font-size: 20px;
-    margin-top: 166px;
+    margin-top: 160px;
   }
 }
 
@@ -45,7 +65,7 @@
   @media (min-width: $tablet-width) {
     height: 1px;
     width: 60px;
-    top: 86px;
+    top: 166px;
     left: 133px;
   }
 
@@ -75,14 +95,15 @@
     width: 170px;
     font-size: 16px;
     line-height: 18px;
-    margin-top: 28px;
+    margin-top: 25px;
     margin-bottom: 85px;
   }
 }
 
 .all-in-catalog__button {
   @media (min-width: $tablet-width) {
-    margin-bottom: 40px;
+    margin-top: 2px;
+    margin-bottom: 38px;
     padding: 10px 80px 10px 80px;
   }
 

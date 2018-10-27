@@ -1,19 +1,19 @@
 /* stylelint-disable */
 .range {
+  position: absolute;
+  display: none;
+
   @media (min-width: $tablet-width) {
     display: block;
+    top: -2px;
+    left: 72px;
+    z-index: 1000;
   }
 
   @media (min-width: $desktop-width) {
-    top: 370px;
-    left: 108px;
+    top: -3px;
+    left: 76px;
   }
-
-  position: absolute;
-  display: none;
-  top: 585px;
-  left: 167px;
-  z-index: 1000;
 }
 
 .range__input {
