@@ -1,9 +1,86 @@
-.slider {
-  position: relative;
+.slider__item {
+  padding: 0;
+  padding-bottom: 63px;
+  background-color: $color-second;
+
+  &--before {
+    display: block;
+  }
+
+  &--after {
+    display: none;
+  }
 
   @media (min-width: $tablet-width) {
-    background-image: linear-gradient(to top, $color-second 67%, $color-main 23%);
+    padding-bottom: 90px;
+
+    &--before {
+      position: relative;
+      display: block;
+      background-image: linear-gradient(to top, $color-second 67%, $color-main 32%);
+      width: 50%;
+      overflow: hidden;
+      z-index: 10;
+    }
+
+    &--after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      background-image: linear-gradient(to top, $fourth-color 67%, $color-main 32%);
+    }
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 128px;
+
+    &--before {
+      position: absolute;
+      top: -138px;
+      left: -40px;
+      display: block;
+      background-image: linear-gradient(to top, $color-second 71%, $color-main 29%);
+      width: 60%;
+      overflow: hidden;
+      z-index: 10;
+    }
+
+    &--after {
+      position: absolute;
+      top: -138px;
+      left: -40px;
+      background-image: linear-gradient(to top, $fourth-color 71%, $color-main 29%);
+    }
+  }
+}
+
+
+.slider__image {
+  margin: 0 auto;
+  margin-bottom: 24px;
+  width: 311px;
+  height: 232px;
+  padding-left: 5px;
+  padding-top: 3px;
+
+  @media (min-width: $tablet-width) {
+    width: 690px;
+    height: 517px;
+    margin-top: 46px;
+    padding-left: 46px;
+    padding-top: 10px;
+    margin-bottom: 19px;
+
+    @media (min-width: $desktop-width) {
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+.slider {
+  position: relative;
 
   @media (min-width: $desktop-width) {
     background-image: none;
@@ -32,6 +109,8 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
+    margin-top: 0;
+    padding-top: 0;
 
     &--before {
       line-height: 26px;
@@ -67,44 +146,26 @@
 }
 
 .slider__text-inner {
+  position: absolute;
+  top: 257px;
+  left: 60px;
   width: 200px;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  padding-bottom: 20px;
   padding-left: 1px;
 
   @media (min-width: $tablet-width) {
+    position: absolute;
     width: 574px;
-    padding-bottom: 50px;
+    top: 588px;
+    left: 95px;
+    z-index: 1000;
   }
 
   @media (min-width: $desktop-width) {
-    width: 575px;
-    margin-right: 0;
-    margin-top: 1px;
-  }
-}
-
-.slider__item {
-  margin-top: 3px;
-  margin-bottom: 14px;
-  width: 311px;
-  height: 232px;
-  padding-left: 2px;
-
-  &--after {
-    display: none;
-  }
-
-  @media (min-width: $tablet-width) {
-    margin-top: 318px;
-    margin-bottom: 14px;
-    //такое число только до замены картинки на адаптивную//
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-top: 100px;
-    //такое число только до замены картинки на адаптивную//
+    width: 578px;
+    top: 418px;
+    left: 33px;
   }
 }
