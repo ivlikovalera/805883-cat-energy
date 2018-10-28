@@ -28,7 +28,7 @@
   }
 }
 
-.social__item {
+.social__link {
   fill: #666666;
 
   &:hover {
@@ -40,16 +40,16 @@
     opacity: 0.3;
   }
 
-  &--vk {
+  &--vkontakte {
     padding-top: 0;
   }
 
-  &--insta {
+  &--instagram {
     padding-top: 3px;
     padding-right: 4px;
   }
 
-  &--fb {
+  &--facebook {
     padding-top: 3px;
     padding-right: 3px;
   }
