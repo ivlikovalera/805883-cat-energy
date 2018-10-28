@@ -8,14 +8,14 @@
 
     &--index {
       background-image:
-        url("../../img/index-background-desktop@1x.jpg"),
+        url("../img/index-background-desktop@1x.jpg"),
         linear-gradient(90deg, white 50%, lightgreen 50%);
       background-repeat: no-repeat;
       background-position: calc(50% + 360px) 0, 0 0;
 
       @media (min-resolution: $retina-dpi),
         (min-resolution: $retina-dppx) {
-        background-image: url("../../img/index-background-desktop@2x.jpg");
+        background-image: url("../img/index-background-desktop@2x.jpg");
         background-size: 720px;
         background-position: calc(50% + 360px) 0, 0 0;
       }
@@ -46,7 +46,9 @@
 }
 
 .page-header__inner--closed {
-  margin-bottom: 9px;
+  @media (min-width: $mobile-width) and (max-width: 767px) {
+    margin-bottom: 9px;
+  }
 }
 
 .page-header__logo {

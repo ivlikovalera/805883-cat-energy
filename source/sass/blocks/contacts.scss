@@ -1,4 +1,5 @@
 .contacts {
+  position: relative;
   display: flex;
   padding: 0;
   padding-bottom: 24px;
@@ -29,6 +30,7 @@
     margin-left: 40px;
     background-color: $color-main;
     z-index: 100;
+    pointer-events: none;
   }
 }
 
@@ -59,6 +61,7 @@
   @media (min-width: $desktop-width) {
     padding-left: 76px;
     padding-right: 95px;
+    pointer-events: none;
   }
 }
 
@@ -88,6 +91,7 @@
     padding-left: 0;
     padding-right: 90px;
     text-align: left;
+    pointer-events: none;
   }
 }
 
@@ -95,5 +99,6 @@
   @media (min-width: $tablet-width) {
     display: inline-block;
     margin-top: 20px;
+    pointer-events: none;
   }
 }
