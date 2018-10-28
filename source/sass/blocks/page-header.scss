@@ -46,7 +46,9 @@
 }
 
 .page-header__inner--closed {
-  margin-bottom: 9px;
+  @media (min-width: $mobile-width) and (max-width: 767px) {
+    margin-bottom: 9px;
+  }
 }
 
 .page-header__logo {

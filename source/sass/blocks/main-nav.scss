@@ -128,7 +128,7 @@
   }
 }
 
-.main-nav__toggle--open {
+.main-nav__toggle {
   position: absolute;
   top: 22px;
   right: 22px;
@@ -162,7 +162,9 @@
 }
 
 .main-nav__wrapper--closed {
-  display: none;
+  @media (min-width: $mobile-width) and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .main-nav__wrapper--opened {

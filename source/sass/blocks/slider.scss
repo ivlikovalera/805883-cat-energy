@@ -49,9 +49,10 @@
 
     &--after {
       position: absolute;
-      top: -138px;
+      top: -137px;
       left: -40px;
       background-image: linear-gradient(to top, $fourth-color 71%, $color-main 29%);
+      width: 124.5%;
     }
   }
 }
