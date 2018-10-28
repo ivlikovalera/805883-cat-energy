@@ -53,8 +53,8 @@
 .page-footer__logo-image {
   margin-left: 96px;
   margin-right: 96px;
-  margin-top: 38px;
-  margin-bottom: 26px;
+  margin-top: 39px;
+  margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -90,6 +90,10 @@
   align-items: center;
   text-decoration: none;
   text-decoration-line: none;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .page-footer__copyright-image {
@@ -108,4 +112,12 @@
   text-align: left;
   color: $text-color-second;
   margin: 0;
+}
+
+.page-footer__copyright-icon {
+  fill: #666666;
+
+  &:hover {
+    fill: #68b738;
+  }
 }

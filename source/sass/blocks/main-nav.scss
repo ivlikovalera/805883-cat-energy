@@ -128,14 +128,13 @@
   }
 }
 
-.main-nav__toggle {
+.main-nav__toggle--open {
   position: absolute;
   top: 22px;
   right: 22px;
-  display: block;
-  width: 20px;
-  height: 20px;
-  background-image: url("../../img/icon-close.svg");
+  width: 25px;
+  height: 19px;
+  background-image: url("../../img/icon-mobile-menu.svg");
   background-color: $color-main;
   cursor: pointer;
   border: none;
@@ -143,4 +142,29 @@
   @media (min-width: $tablet-width) {
     display: none;
   }
+}
+
+.main-nav__toggle--close {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  width: 20px;
+  height: 20px;
+  background-image: url("../../img/icon-close.svg");
+  background-repeat: no-repeat;
+  background-color: $color-main;
+  cursor: pointer;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav__wrapper--closed {
+  display: none;
+}
+
+.main-nav__wrapper--opened {
+  display: block;
 }
