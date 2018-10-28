@@ -5,6 +5,7 @@
     <title>HTML Academy: Кэт энерджи</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="format-detection" content="telephone=no">
+    <link rel="preload" href="js/menu.js" as="script">
     <link rel="stylesheet" href="css/style.css">
 <style>
   HTML {
@@ -66,7 +67,7 @@ c0.9,0,1.2,0.1,1.6,0.1c1.2,0.3,1.2,1.3,1.1,2.5c0,0.4,0,0.8,0,1.2c0,0.1,0,0.2,0,0
     <div class="container">
       <header class="page-header page-header--index">
 
-        <div class="page-header__inner">
+        <div class="page-header__inner page-header__inner--closed">
         <a class="page-header__logo">
           <picture>
             <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
@@ -75,13 +76,13 @@ c0.9,0,1.2,0.1,1.6,0.1c1.2,0.3,1.2,1.3,1.1,2.5c0,0.4,0,0.8,0,1.2c0,0.1,0,0.2,0,0
           </picture>
         </a>
 
-        <nav class="main-nav main-nav--opened">
+        <nav class="main-nav">
 
-        <button class="main-nav__toggle" type="button">
+        <button class="main-nav__toggle main-nav__toggle--open" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
 
-        <div class="main-nav__wrapper">
+        <div class="main-nav__wrapper  main-nav__wrapper--closed">
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item-index">
               <a class="main-nav__link">Главная</a>
@@ -307,4 +308,5 @@ c0.9,0,1.2,0.1,1.6,0.1c1.2,0.3,1.2,1.3,1.1,2.5c0,0.4,0,0.8,0,1.2c0,0.1,0,0.2,0,0
       </footer>
     </div>
   </body>
+  <script src="js/menu.js"></script>
 </html>
