@@ -53,7 +53,7 @@ gulp.task("optimage", function () {
     imagemin.jpegtran({progressive:true}),
     imagemin.svgo()
     ]))
-  .pipe(gulp.dest("build/img"))
+  .pipe(gulp.dest("source/img"))
   .pipe(size());
 });
 
@@ -109,7 +109,6 @@ gulp.task("build", gulp.series(
   "copy",
   "css",
   "html",
- // "optimage",
   "jsmin"
   ));
 

@@ -94,12 +94,12 @@
 .effect__text--nature::before {
   width: 26px;
   height: 29px;
-  background-image: url("../../img/advantage-leaf@1x.png");
+  background-image: url("../img/advantage-leaf@1x.png");
   background-repeat: no-repeat;
   background-position: center;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../../img/advantage-leaf@2x.png");
+    background-image: url("../img/advantage-leaf@2x.png");
     background-size: 50px 50px;
   }
 }
@@ -107,12 +107,12 @@
 .effect__text--powder::before {
   width: 26px;
   height: 29px;
-  background-image: url("../../img/advantage-powder@1x.png");
+  background-image: url("../img/advantage-powder@1x.png");
   background-repeat: no-repeat;
   background-position: center;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../../img/advantage-powder@2x.png");
+    background-image: url("../img/advantage-powder@2x.png");
     background-size: 50px 50px;
   }
 }
@@ -120,13 +120,13 @@
 .effect__text--eat::before {
   width: 26px;
   height: 29px;
-  background-image: url("../../img/advantage-dining@1x.png");
+  background-image: url("../img/advantage-dining@1x.png");
   background-repeat: no-repeat;
   background-position: center;
 
   @media (min-resolution: $retina-dpi),
     (min-resolution: $retina-dppx) {
-    background-image: url("../../img/advantage-dining@2x.png");
+    background-image: url("../img/advantage-dining@2x.png");
     background-size: 50px 50px;
   }
 }
@@ -134,13 +134,13 @@
 .effect__text--time::before {
   width: 26px;
   height: 29px;
-  background-image: url("../../img/advantage-clock@1x.png");
+  background-image: url("../img/advantage-clock@1x.png");
   background-repeat: no-repeat;
   background-position: center;
 
   @media (min-resolution: $retina-dpi),
     (min-resolution: $retina-dppx) {
-    background-image: url("../../img/advantage-clock@2x.png");
+    background-image: url("../img/advantage-clock@2x.png");
     background-size: 50px 50px;
   }
 }

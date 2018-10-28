@@ -210,7 +210,7 @@
 
 .additionally__bonus {
   background-color: lightgreen;
-  background-image: url("../../img/icon-gift.svg"), url("../../img/gift-photo-mobile@1x.jpg");
+  background-image: url("../img/icon-gift.svg"), url("../img/gift-photo-mobile@1x.jpg");
   background-size: 56px 61px, 100% 289px;
   background-repeat: no-repeat, no-repeat;
   background-position: 50% 27%;
@@ -219,7 +219,7 @@
 
   @media (min-resolution: $retina-dpi),
     (min-resolution: $retina-dppx) {
-    background-image: url("../../img/icon-gift.svg"), url("../../img/gift-photo-mobile@2x.jpg");
+    background-image: url("../img/icon-gift.svg"), url("../img/gift-photo-mobile@2x.jpg");
     background-size: 56px 61px, 100% 289px;
   }
 
@@ -229,13 +229,13 @@
     margin: 0 auto;
     margin-top: 67px;
     margin-bottom: 79px;
-    background-image: url("../../img/icon-gift.svg"), url("../../img/gift-photo-tablet@1x.jpg");
+    background-image: url("../img/icon-gift.svg"), url("../img/gift-photo-tablet@1x.jpg");
     background-size: 55px 60px, 708px 200px;
     background-position: 14% 47%, 100% 100%;
 
     @media (min-resolution: $retina-dpi),
       (min-resolution: $retina-dppx) {
-      background-image: url("../../img/icon-gift.svg"), url("../../img/gift-photo-tablet@2x.jpg");
+      background-image: url("../img/icon-gift.svg"), url("../img/gift-photo-tablet@2x.jpg");
       background-size: 55px 60px, 708px 200px;
     }
   }
@@ -244,13 +244,13 @@
     width: 245px;
     height: 289px;
     margin: 0;
-    background-image: url("../../img/icon-gift.svg"), url("../../img/gift-photo-desktop@1x.jpg");
+    background-image: url("../img/icon-gift.svg"), url("../img/gift-photo-desktop@1x.jpg");
     background-size: 55px 60px, 100% 289px;
     background-position: 50% 27%;
 
     @media (min-resolution: $retina-dpi),
       (min-resolution: $retina-dppx) {
-      background-image: url("../../img/icon-gift.svg"), url("../../img/gift-photo-desktop@2x.jpg");
+      background-image: url("../img/icon-gift.svg"), url("../img/gift-photo-desktop@2x.jpg");
       background-size: 55px 60px, 100% 289px;
       background-position: 50% 27%;
     }
