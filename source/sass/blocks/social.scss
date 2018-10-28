@@ -13,8 +13,8 @@
   width: 128px;
   margin-left: 73px;
   margin-right: 79px;
-  margin-top: 22px;
-  margin-bottom: 16px;
+  margin-top: 19px;
+  margin-bottom: 17px;
   padding: 0;
   list-style: none;
   display: flex;
@@ -23,21 +23,59 @@
 
   @media (min-width: $tablet-width) {
     padding-left: 15px;
+    margin-top: 17px;
+    margin-bottom: 19px;
   }
 }
 
 .social__item {
+  fill: #666666;
+
+  &:hover {
+    fill: #68b738;
+  }
+
+  &:active {
+    fill: #68b738;
+    opacity: 0.3;
+  }
+
   &--vk {
     padding-top: 0;
   }
 
-  &--inst {
-    padding-top: 2px;
-    padding-right: 2px;
+  &--insta {
+    padding-top: 3px;
+    padding-right: 4px;
   }
 
   &--fb {
-    padding-top: 2px;
+    padding-top: 3px;
     padding-right: 3px;
+  }
+}
+
+.social__icon {
+  padding-top: 0;
+
+  &--vk {
+    @media (min-width: $tablet-width) {
+      width: 30px;
+      height: 16px;
+    }
+  }
+
+  &--insta {
+    @media (min-width: $tablet-width) {
+      width: 23px;
+      height: 23px;
+    }
+  }
+
+  &--fb {
+    @media (min-width: $tablet-width) {
+      width: 14px;
+      height: 28px;
+    }
   }
 }

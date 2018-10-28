@@ -152,6 +152,7 @@
   }
 
   &--contact {
+    position: relative;
     margin: 0;
   }
 
@@ -339,6 +340,43 @@
     &--textarea {
       flex-grow: 2;
     }
+  }
+}
+
+.form__mail-icon {
+  position: absolute;
+  top: 14px;
+  left: 246px;
+  fill: #222222;
+}
+
+.form__phone-icon {
+  position: absolute;
+  top: 11px;
+  left: 246px;
+  fill: #222222;
+}
+
+.form__input-inner {
+  &:hover {
+    outline: none;
+    border-color: rgb(205, 205, 205);
+  }
+
+  &:focus {
+    outline: none;
+    border-color: #444444;
+    box-shadow: inset 0 0 0 1px #444444;
+  }
+
+  &:focus:required {
+    outline: none;
+    border-color: #ff8282;
+    box-shadow: inset 0 0 0 1px #ff8282;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-width: 535px;
   }
 }
 
