@@ -44,6 +44,10 @@
   padding-bottom: 22px;
   margin: 0;
 
+  &--slim {
+    padding-right: 25px;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;

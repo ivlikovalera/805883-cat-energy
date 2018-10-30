@@ -1,17 +1,14 @@
 .contacts {
   position: relative;
-  display: flex;
   padding: 0;
   padding-bottom: 24px;
 
   &--grey {
-    display: flex;
     background-color: $color-second;
-    padding-bottom: 26px;
+    padding-bottom: 24px;
   }
 
   @media (min-width: $tablet-width) {
-    max-width: 768px;
     padding-top: 30px;
     padding-bottom: 58px;
     margin: 0;
@@ -19,7 +16,6 @@
     &--grey {
       background-color: $color-second;
       background-size: contain;
-      max-width: 768px;
     }
   }
 
@@ -27,11 +23,33 @@
     margin-top: 95px;
     margin-bottom: 102px;
     width: 570px;
-    margin-left: 40px;
+    margin-left: 0;
     background-color: $color-main;
     z-index: 100;
-    pointer-events: none;
   }
+}
+
+.contacts__container {
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
+  }
+}
+
+.contacts__inner {
+  display: flex;
+  width: 300px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 648px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 530px;
+
+  }
+
 }
 
 .contacts__title {
@@ -45,7 +63,7 @@
   text-align: left;
   color: $text-color-main;
   text-transform: uppercase;
-  padding-left: 20px;
+  padding-left: 10px;
   padding-right: 18px;
   padding-top: 29px;
   margin: 0;
@@ -54,14 +72,14 @@
     font-size: 20px;
     line-height: 25px;
     padding-right: 210px;
-    padding-left: 70px;
+    padding-left: 10px;
     padding-top: 35px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 76px;
-    padding-right: 95px;
-    pointer-events: none;
+    width: 200px;
+    padding-left: 56px;
+    padding-right: 50px;
   }
 }
 
@@ -75,7 +93,7 @@
   letter-spacing: normal;
   text-align: left;
   color: $text-color-second;
-  padding-right: 20px;
+  padding-right: 10px;
   padding-top: 29px;
   margin: 0;
 
@@ -83,15 +101,15 @@
     font-size: 16px;
     padding-top: 33px;
     padding-left: 39px;
-    padding-right: 70px;
+    padding-right: 11px;
     text-align: right;
   }
 
   @media (min-width: $desktop-width) {
+    width: 170px;
     padding-left: 0;
-    padding-right: 90px;
+    padding-right: 50px;
     text-align: left;
-    pointer-events: none;
   }
 }
 
@@ -99,6 +117,5 @@
   @media (min-width: $tablet-width) {
     display: inline-block;
     margin-top: 20px;
-    pointer-events: none;
   }
 }
