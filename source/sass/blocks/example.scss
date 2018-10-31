@@ -46,7 +46,6 @@
 }
 
 .example__box {
-
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: flex-start;
@@ -69,7 +68,6 @@
 }
 
 .example__wrapper {
-
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: column;
@@ -245,7 +243,6 @@
 }
 
 .example__inner {
-
   @media (min-width: $tablet-width) {
     position: relative;
   }
