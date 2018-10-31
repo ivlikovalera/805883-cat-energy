@@ -20,9 +20,9 @@ gulp.task("copy", function () {
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**/*.{jpg,png,svg,webp}"
   ], {
-    base: "source"
-  })
-  .pipe(gulp.dest("build"));
+      base: "source"
+    })
+    .pipe(gulp.dest("build"));
 });
 
 gulp.task("clean", function () {
@@ -47,45 +47,51 @@ gulp.task("css", function () {
 
 gulp.task("optimage", function () {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
-  .pipe(size())
-  .pipe(imagemin([
-    imagemin.optipng({optimizationLevel: 3}),
-    imagemin.jpegtran({progressive:true}),
+    .pipe(size())
+    .pipe(imagemin([
+    imagemin.optipng({
+        optimizationLevel: 3
+      }),
+    imagemin.jpegtran({
+        progressive: true
+      }),
     imagemin.svgo()
     ]))
-  .pipe(gulp.dest("source/img"))
-  .pipe(size());
+    .pipe(gulp.dest("source/img"))
+    .pipe(size());
 });
 
 
 gulp.task("webp", function () {
   return gulp.src("source/content/*.{png,jpg}")
-  .pipe(size())
-  .pipe(webp({quality: 90}))
-  .pipe(gulp.dest("source/img/content"))
-  .pipe(size());
+    .pipe(size())
+    .pipe(webp({
+      quality: 90
+    }))
+    .pipe(gulp.dest("source/img/content"))
+    .pipe(size());
 });
 
 gulp.task("html", function () {
   return gulp.src("source/*.html")
-  .pipe(size())
-  .pipe(htmlmin({
-    collapseWhitespace: true
-  }))
-  .pipe(gulp.dest("build"))
-  .pipe(size());
+    .pipe(size())
+    .pipe(htmlmin({
+      collapseWhitespace: true
+    }))
+    .pipe(gulp.dest("build"))
+    .pipe(size());
 });
 
 gulp.task("jsmin", function () {
   return gulp.src("source/js/*.js")
-  .pipe(size())
-  .pipe(gulp.dest("build/js"))
-  .pipe(uglify())
-  .pipe(rename(function (path) {
-    path.basename += ".min"
-  }))
-  .pipe(gulp.dest("build/js"))
-  .pipe(size());
+    .pipe(size())
+    .pipe(gulp.dest("build/js"))
+    .pipe(uglify())
+    .pipe(rename(function (path) {
+      path.basename += ".min"
+    }))
+    .pipe(gulp.dest("build/js"))
+    .pipe(size());
 });
 
 gulp.task("server", function () {
@@ -110,6 +116,6 @@ gulp.task("build", gulp.series(
   "css",
   "html",
   "jsmin"
-  ));
+));
 
 gulp.task("start", gulp.series("build", "server"));

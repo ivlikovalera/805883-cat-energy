@@ -2,7 +2,7 @@
   width: auto;
 
   @media (min-width: $desktop-width) {
-    margin-top: 80px;
+    margin-top: 0;
 
     &--form {
       margin-top: 0;
@@ -29,7 +29,7 @@
   @media (min-width: $tablet-width) {
     width: 628px;
     margin-left: 70px;
-    margin-top: -20px;
+    margin-top: -18px;
     font-size: 20px;
     line-height: 30px;
     padding: 0;
@@ -49,5 +49,4 @@
 
 .page-main__index {
   margin-top: 0;
-  border-top: 80px solid $color-main;
 }

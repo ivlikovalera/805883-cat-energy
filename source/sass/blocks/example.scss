@@ -10,6 +10,7 @@
     border: none;
     background-image: linear-gradient(to top, $color-second 70%, $color-main 29%);
     padding-bottom: 33px;
+    width: auto;
   }
 }
 
@@ -45,17 +46,30 @@
 }
 
 .example__box {
+
   @media (min-width: $desktop-width) {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: flex-start;
-    width: 1220px;
     margin: 0 auto;
     margin-top: 0;
   }
 }
 
+.example__box::after {
+  @media (min-width: $desktop-width) {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 461px;
+    background-color: #eaeaea;
+    bottom: 0;
+    right: 0;
+  }
+}
+
 .example__wrapper {
+
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: column;
@@ -223,7 +237,15 @@
   }
 }
 
+.example__container {
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
+  }
+}
+
 .example__inner {
+
   @media (min-width: $tablet-width) {
     position: relative;
   }

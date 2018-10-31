@@ -3,6 +3,7 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
+    position: relative;
     max-width: 768px;
   }
 
