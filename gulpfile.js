@@ -63,12 +63,12 @@ gulp.task("optimage", function () {
 
 
 gulp.task("webp", function () {
-  return gulp.src("source/content/*.{png,jpg}")
+  return gulp.src("source/img/**/*.{png,jpg}")
     .pipe(size())
     .pipe(webp({
       quality: 90
     }))
-    .pipe(gulp.dest("source/img/content"))
+    .pipe(gulp.dest("source/img/webp"))
     .pipe(size());
 });
 
