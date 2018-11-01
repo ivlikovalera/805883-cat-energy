@@ -35,7 +35,7 @@
       width: 630px;
       margin: 0 auto;
       padding-top: 20px;
-      margin-top: 48px;
+      margin-top: 43px;
       margin-bottom: 66px;
       padding-bottom: 15px;
     }
@@ -45,7 +45,7 @@
     }
 
     &--comment {
-      margin-bottom: 53px;
+      margin-bottom: 38px;
     }
   }
 
@@ -319,11 +319,12 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    line-height: 20px;
+    line-height: 30px;
     padding-left: 20px;
     padding-top: 10px;
     padding-bottom: 11px;
     margin-left: auto;
+    margin-bottom: 16px;
 
     &--textarea {
       margin-left: 0;
@@ -335,8 +336,11 @@
   }
 
   @media (min-width: $desktop-width) {
+    height: 52px;
+
     &--textarea {
       flex-grow: 2;
+      height: 174px;
     }
   }
 }
@@ -480,6 +484,7 @@
   }
 
   @media (min-width: $tablet-width) {
+    width: 325px;
     padding-left: 60px;
     padding-top: 10px;
     padding-bottom: 10px;
