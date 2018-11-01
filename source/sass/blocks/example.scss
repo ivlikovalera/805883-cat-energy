@@ -34,14 +34,17 @@
     padding-left: 30px;
     padding-top: 43px;
     padding-bottom: 65px;
+    padding-right: 30px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1220px;
     margin: 0 auto;
+    box-sizing: border-box;
     padding-top: 66px;
     padding-left: 0;
     padding-bottom: 20px;
+    padding-right: 500px;
   }
 }
 
@@ -279,6 +282,7 @@
     text-align: left;
     width: auto;
     padding-top: 15px;
+    padding-right: 50px;
   }
 }
 

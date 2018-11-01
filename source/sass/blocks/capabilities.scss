@@ -11,7 +11,7 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     width: 1220px;
     margin: 0 auto;
     margin-top: 78px;
@@ -30,6 +30,12 @@
   @media (min-width: $desktop-width) {
     width: 570px;
     margin-bottom: 71px;
+  }
+}
+
+.capabilities__item--slim {
+  @media (min-width: $desktop-width) {
+    margin-right: auto;
   }
 }
 
@@ -173,12 +179,14 @@
     padding-top: 76px;
     padding-left: 53px;
     padding-bottom: 25px;
+    padding-right: 250px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 78px;
     padding-left: 215px;
     padding-bottom: 75px;
+    padding-right: 30px;
   }
 }
 
