@@ -73,7 +73,7 @@
   }
 }
 
-.capabilities__text--slim::before {
+.capabilities__item--slim::before {
   content: "";
   position: absolute;
   background-image: url("../img/icon-cat-slim.svg");
@@ -86,7 +86,6 @@
   z-index: 100;
 
   @media (min-width: $tablet-width) {
-    position: absolute;
     left: 475px;
     top: 80px;
     width: 141px;
@@ -94,7 +93,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    position: absolute;
     left: 65px;
     top: 43px;
     width: 71px;
@@ -102,7 +100,7 @@
   }
 }
 
-.capabilities__text--pro::before {
+.capabilities__item--pro::before {
   content: "";
   position: absolute;
   background-image: url("../img/icon-cat-pro.svg");
@@ -115,7 +113,6 @@
   z-index: 100;
 
   @media (min-width: $tablet-width) {
-    position: absolute;
     left: 412px;
     top: 133px;
     width: 268px;
@@ -124,7 +121,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    position: absolute;
     left: 33px;
     top: 70px;
     width: 134px;

@@ -14,7 +14,7 @@
   }
 }
 
-.all-in-catalog::before {
+/*.all-in-catalog::before {
   @media (min-width: $tablet-width) {
     content: "";
     position: absolute;
@@ -29,7 +29,7 @@
   @media (min-width: $desktop-width) {
     display: none;
   }
-}
+}*/
 
 .all-in-catalog__subtitle {
   font-family: $font-family-main;
@@ -48,7 +48,7 @@
   @media (min-width: $tablet-width) {
     width: 135px;
     font-size: 20px;
-    margin-top: 160px;
+    margin-top: 81px;
   }
 
   @media (min-width: $desktop-width) {
@@ -69,7 +69,7 @@
   @media (min-width: $tablet-width) {
     height: 1px;
     width: 60px;
-    top: 166px;
+    top: 84px;
     left: 133px;
   }
 
@@ -107,7 +107,7 @@
 
 .all-in-catalog__button {
   @media (min-width: $tablet-width) {
-    margin-top: 2px;
+    margin-top: 0;
     margin-bottom: 38px;
     padding: 10px 80px 10px 80px;
   }

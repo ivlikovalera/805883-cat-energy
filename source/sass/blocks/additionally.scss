@@ -44,6 +44,7 @@
 }
 
 .additionally__title-span {
+  display: table;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
@@ -51,8 +52,8 @@
   font-stretch: normal;
   letter-spacing: normal;
   text-align: left;
-  padding-bottom: 10px;
-  padding-top: 28px;
+  padding-bottom: 6px;
+  padding-top: 6px;
   padding-right: 22px;
   background-color: #ffffff;
 
@@ -60,7 +61,7 @@
     font-size: 36px;
     line-height: 36px;
     border: none;
-    padding-bottom: 50px;
+    padding-bottom: 5px;
     padding-right: 35px;
     padding-left: 38px;
     padding-top: 0;
@@ -105,6 +106,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
+    max-width: 200px;
   }
 }
 
@@ -149,6 +151,13 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
+  }
+
+  &--price {
+    @media (min-width: $tablet-width) {
+      max-width: 50px;
+      text-align: left;
+    }
   }
 }
 
@@ -243,7 +252,7 @@
 }
 
 .additionally__bonus {
-  background-color: lightgreen;
+  background-color: #68b738;
   background-image: url("../img/icon-gift.svg"), url("../img/gift-photo-mobile@1x.jpg");
   background-size: 56px 61px, 100% 289px;
   background-repeat: no-repeat, no-repeat;
@@ -276,17 +285,18 @@
 
   @media (min-width: $desktop-width) {
     width: 245px;
-    height: 289px;
+    min-height: 289px;
+    align-self: flex-end;
     margin: 0;
     background-image: url("../img/icon-gift.svg"), url("../img/gift-photo-desktop@1x.jpg");
     background-size: 55px 60px, 100% 289px;
-    background-position: 50% 27%;
+    background-position: 50% 29%;
 
     @media (min-resolution: $retina-dpi),
       (min-resolution: $retina-dppx) {
       background-image: url("../img/icon-gift.svg"), url("../img/gift-photo-desktop@2x.jpg");
       background-size: 55px 60px, 100% 289px;
-      background-position: 50% 27%;
+      background-position: 50% 29%;
     }
   }
 }
@@ -305,11 +315,13 @@
 
   @media (min-width: $tablet-width) {
     text-align: left;
-    padding: 73px 120px 20px 422px;
+    padding: 73px 120px 10px 422px;
+    margin: 20px 0 10px 0;
   }
 
   @media (min-width: $desktop-width) {
     text-align: center;
-    padding: 170px 41px 43px 41px;
+    padding: 188px 41px 43px 41px;
+    margin: 0;
   }
 }
